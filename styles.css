@@ -3,40 +3,72 @@ colors
 */
 :root {
     --creme: #F7F5EB;
-    --rose: #F1EBE2;
-    --pink: #CE7777;
+    --sun: #FFFBEB;
+    --light-blush: #F8F6F1;
+    --blush: #F1EBE2;
+    --rose: #CE7777;
     --popsicle: #F6BA6F;
     --silver: #AAAAAA;
     --slate: #151E2E;
     --mustard: #F8B562;
     --orange: #E78336;
+    --light-cotton: #e6e9e5;
+    --light-cotton-rgb: 230,233,229;
     --cotton: #BDCDD6;
-    --blue: #A0C3D2;
+    --light-blue: #A0C3D2;
+    --blue: #90AACB;
     --dark-blue: #2B3A55;
+    --teal: #205375;
 }
 
 body {
     font-family: 'Outfit', sans-serif;
     background-color: var(--creme);
     color: var(--slate) !important;
+    overflow-x: hidden;
 }
 
-.name {
-    color: var(--orange) !important;
-    font-weight: 600px;
-}
-
-.highlight {
-    color: var(--pink);
+.padTB {
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 
 h1 {
     font-weight: 500 !important;
 }
 
+.title {
+    font-family: 'Playfair Display', serif;
+    line-height: 0.9;
+}
+
 .jumbo {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 350px;
+    padding-bottom: 350px;
+    line-height: 1;
+}
+
+/* .name {
+    font-size: calc(4rem + 3.2vw);
+}
+@media(min-width: 1200px) {
+    .name {
+        font-family: 'Playfair Display', serif;
+        font-size: 130px;
+        line-height: 0.9;
+    }
+} */
+
+svg {
+    z-index: -1;
+}
+
+.about {
+    margin-left: 50px;
+    margin-right: 50px;
+    background-color: var(--light-blush);
+    border: 3px solid var(--blush);
+    box-shadow: -15px 15px var(--blush);
 }
 
 .me {
@@ -47,8 +79,9 @@ h1 {
 }
 
 .me .cover {
-    background-color: var(--rose);
+    background-color: var(--blush);
     background-image: url("./stick.png");
+    background-repeat: no-repeat;
     position: absolute;
     top: -65px;
     left: -65px;
@@ -72,17 +105,6 @@ h1 {
     transition: all ease 0.4s;
 }
 
-.about {
-    background-color: var(--rose);
-    /* color: var(--creme); */
-    /* padding-right: 500px; */
-}
-
-.padTB {
-    padding-top: 80px;
-    padding-bottom: 80px;
-}
-
 .btn {
     --bs-btn-border-radius: 30px;
     padding: 13px 25px;
@@ -92,7 +114,7 @@ h1 {
 .btn-blue {
     --bs-btn-font-weight: 600;
     --bs-btn-color: var(--bs-white);
-    --bs-btn-bg: #205375;
+    --bs-btn-bg: var(--teal);
     --bs-btn-border-color: transparent;
     --bs-btn-hover-color: #205375;
     --bs-btn-hover-bg: transparent;
@@ -102,4 +124,30 @@ h1 {
     --bs-btn-active-bg: #{shade-color($bd-violet, 20%)};
     --bs-btn-active-border-color: #{shade-color($bd-violet, 20%)};
   
+}
+
+.orange {
+    color: var(--orange) !important;
+}
+.rose {
+    color: var(--rose) !important;
+}
+.blue {
+    color: var(--blue);
+}
+.dark-blue {
+    color:var(--dark-blue);
+}
+.teal {
+    color: var(--teal);
+}
+
+.bg-light-blush {
+    background-color: var(--light-blush);
+}
+.bg-blush {
+    background-color: var(--blush);
+}
+.bg-light-cotton {
+    background-color: var(--light-cotton);
 }
