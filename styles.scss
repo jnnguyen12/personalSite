@@ -1,0 +1,210 @@
+/*
+colors
+*/
+$creme: #f9f7ef;
+$sun: #FFFBEB;
+$light-blush: #F8F6F1;
+$blush: #F1EBE2;
+$tan: #D6C4AE;
+$rose: #CE7777;
+$popsicle: #F6BA6F;
+$silver: #AAAAAA;
+$slate: #151E2E;
+$mustard: #F8B562;
+$orange: #E78336;
+$light-cotton: #e6e9e5;
+$light-cotton-rgb: 230,233,229;
+$cotton: #BDCDD6;
+$light-blue: #A0C3D2;
+$blue: #90AACB;
+$dark-blue: #2B3A55;
+$light-teal: #93BFCF;
+$teal: #205375;
+$moss: #497174;
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: $creme;
+    color: $slate !important;
+    overflow-x: hidden;
+}
+
+@mixin color($color) {
+    color: $color;
+}
+
+@mixin bg($bg) {
+    background-color: $bg;
+}
+
+.padTB {
+   height: 80vh;
+   display: flex;
+   align-items: center;
+}
+
+h1 {
+    font-weight: 500 !important;
+}
+
+.title {
+    font-family: 'Playfair Display', serif;
+    line-height: 0.9;
+}
+
+.jumbo {
+    padding-top: 350px;
+    padding-bottom: 350px;
+    line-height: 1;
+}
+
+svg {
+    z-index: -1;
+}
+
+.about {
+    // margin-left: 50px;
+    // margin-right: 50px;
+    background-color: rgba($light-blush, 0.5);
+    border: 3px solid $blush;
+    box-shadow: -15px 15px $blush;
+}
+
+.me {
+    position: relative;
+    /* width: 400px; */
+    height: 500px;
+    overflow: hidden;
+
+    .cover {
+        @include bg($blush);
+        background-image: url("./stick.png");
+        background-repeat: no-repeat;
+        position: absolute;
+        top: -90px;
+        left: -90px;
+        right: 0px;
+        bottom: 0px;
+    }
+
+    img {
+        position: absolute;
+        top: 55px;
+        left: -15px;
+        right: 0px;
+        bottom: 0px;
+        margin: auto;
+        height: 130%;
+        opacity: 0;
+        transition: all ease 0.4s;
+    }
+
+    .cover:hover img, .me .cover:active img, .me .cover:focus img {
+        opacity: 1;
+    }
+}
+
+$badge-color: $blue;
+.badge {
+    --bs-badge-font-size: 1em;
+    --bs-badge-padding-y: 1em;
+    --bs-badge-padding-x: 1em;
+}
+
+.btn {
+    --bs-btn-border-radius: 30px;
+    padding: 13px 25px;
+    --bs-border-width: 2px;
+}
+
+.btn-blue {
+    --bs-btn-font-weight: 600;
+    --bs-btn-color: white;
+    --bs-btn-bg: $teal;
+    --bs-btn-border-color: transparent;
+    --bs-btn-hover-color: $teal;
+    --bs-btn-hover-bg: transparent;
+    --bs-btn-hover-border-color: $teal;
+    --bs-btn-focus-shadow-rgb: transparent;
+    --bs-btn-active-color:  #{shade-color($teal, 20%)};
+    --bs-btn-active-bg: transparent;
+    --bs-btn-active-border-color: #{shade-color($teal, 20%)};
+  
+}
+
+
+.orange {
+    @include color($orange);
+}
+.rose {
+    @include color($rose);
+}
+.blue {
+    @include color($blue);
+}
+.dark-blue {
+    @include color($dark-blue);
+}
+.teal {
+    @include color($teal);
+}
+
+.bg-light-blush {
+    @include bg($light-blush);
+}
+.bg-blush {
+    @include bg($blush);
+}
+.bg-tan {
+    @include bg($tan);
+}
+.bg-light-cotton {
+    @include bg($light-cotton);
+}
+.bg-cotton {
+    @include bg($cotton);
+}
+.bg-light-blue {
+    @include bg($light-blue);
+}
+.bg-blue {
+    @include bg($blue);
+}
+.bg-rose {
+    @include bg($rose);
+}
+.bg-popsicle {
+    @include bg($popsicle);
+}
+.bg-teal {
+    @include bg($teal);
+}
+.bg-light-teal {
+    @include bg($light-teal);
+}
+
+/*
+laptop screens
+*/
+@media (max-width: 1200px) {
+    .cover {
+        left: -105px !important;
+    }
+}
+
+/*
+Ipad horizontals
+*/
+@media (max-width: 1024px) {
+
+}
+
+/*
+mobile
+*/
+@media (max-width: 480px) {
+    .cover {
+        top: -70px !important;
+        left: -50px !important;
+    }
+}
