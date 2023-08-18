@@ -3,7 +3,7 @@ colors
 */
 body {
   font-family: "Outfit", sans-serif;
-  background-color: #f9f7ef;
+  background-color: #F6F1F1;
   color: #151E2E !important;
   overflow-x: hidden;
 }
@@ -34,9 +34,9 @@ svg {
 }
 
 .about {
-  background-color: rgba(248, 246, 241, 0.5);
-  border: 3px solid #F1EBE2;
-  box-shadow: -15px 15px #F1EBE2;
+  background-color: rgba(246, 241, 241, 0.5);
+  border: 3px solid #D3E2EA;
+  box-shadow: -15px 15px #D3E2EA;
 }
 
 .me {
@@ -46,7 +46,7 @@ svg {
   overflow: hidden;
 }
 .me .cover {
-  background-color: #F1EBE2;
+  background-color: #E5EAEE;
   background-image: url("./stick.png");
   background-repeat: no-repeat;
   position: absolute;
@@ -104,6 +104,30 @@ svg {
   color: #CE7777;
 }
 
+.sand {
+  color: #F6A762;
+}
+
+.ocean {
+  color: #6096B4;
+}
+
+.light-blue {
+  color: #AFD3E2;
+}
+
+.air-blue {
+  color: #62A0BB;
+}
+
+.cyan {
+  color: #19A7CE;
+}
+
+.cerulean {
+  color: #146C94;
+}
+
 .blue {
   color: #90AACB;
 }
@@ -128,6 +152,10 @@ svg {
   background-color: #D6C4AE;
 }
 
+.bg-pollen {
+  background-color: #e6bbbb;
+}
+
 .bg-light-cotton {
   background-color: #e6e9e5;
 }
@@ -137,7 +165,7 @@ svg {
 }
 
 .bg-light-blue {
-  background-color: #A0C3D2;
+  background-color: #AFD3E2;
 }
 
 .bg-blue {
