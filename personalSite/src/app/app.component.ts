@@ -25,4 +25,8 @@ export class AppComponent {
     "C++": "Both C and C++ I have worked with during my COMS327 class where we have to implement a Pokémon game, using NCurses and applicable data structures.",
     "Java": "I have worked with Java for most of my projects in" +  ("COMS309 - Sweet Valley").bold()
   }
+
+  onSelect(lang:string):void {
+
+  }
 }

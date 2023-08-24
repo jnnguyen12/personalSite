@@ -77,8 +77,6 @@ svg {
 }
 
 .about {
-    // margin-left: 50px;
-    // margin-right: 50px;
     background-color: rgba($snow, 0.5);
     border: 3px solid $alice-blue;
     box-shadow: -15px 15px $alice-blue;
@@ -109,7 +107,7 @@ svg {
         bottom: 0px;
         margin: auto;
         height: 130%;
-        opacity: 0;
+        opacity: 0; 
         transition: all ease 0.4s;
     }
 

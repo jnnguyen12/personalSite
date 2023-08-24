@@ -27,18 +27,21 @@ $moss: #497174;
 $snow: #F6F1F1;
 $wet-snow: #EEEEF0;
 $wall: #E5EAEE;
+$concrete: #5c778d;
 $alice-blue: #D3E2EA;
 $light-blue: #AFD3E2;
 $sky: #7CC8DE;
 $cyan: #19A7CE;
 $air-blue: #62A0BB;
 $cerulean: #146C94;
+
 $sand: #F6A762;
 $pollen: #e6bbbb;
 $clay: #684343;
+$dark-clay: #3e2828;
 
 body {
-    font-family: 'Outfit', sans-serif;
+    font-family: 'Roboto Slab', sans-serif;
     background-color: $snow;
     color: $slate !important;
     overflow-x: hidden;
@@ -54,9 +57,11 @@ body {
 
 
 .padTB {
-   height: 90vh;
+   min-height: 90vh;
    display: flex;
    align-items: center;
+   padding-top: 10vh;
+   padding-bottom: 10vh;
 }
 
 h1 {
@@ -66,6 +71,8 @@ h1 {
 .title {
     font-family: 'Playfair Display', serif;
     line-height: 0.9;
+    padding-bottom: 1rem;
+    color: $concrete;
 }
 
 .jumbo {
@@ -79,12 +86,17 @@ svg {
 }
 
 .about {
-    // margin-left: 50px;
-    // margin-right: 50px;
-    background-color: rgba($snow, 0.5);
-    border: 3px solid $alice-blue;
-    box-shadow: -15px 15px $alice-blue;
+    background-color: rgba($dark-blue, 0.5);
+    border: 3px solid rgba(white, 0.6);
+    box-shadow: -10px 10px 10px rgba($dark-blue, 0.5);
+    padding: 3em;
 }
+    @media (max-width: 480px)
+    {
+        .about {
+            padding: 2em;
+        }
+    }
 
 .me {
     position: relative;
@@ -117,6 +129,28 @@ svg {
 
     .cover:hover img, .me .cover:active img, .me .cover:focus img {
         opacity: 1;
+    }
+}
+
+.skill-branch::before {
+    content: ' ';
+    position: absolute;
+    // top: 0;
+    left: 10px;
+    background: $alice-blue;
+    height: 100%;
+    width: 3px;
+}
+
+.skill-card {
+    border-radius: 30px;
+    padding: 10px;
+    margin: 15px;
+    border: 3px solid $alice-blue;
+    background-color: rgba(white, 0);
+
+    .card-title {
+        color: $dark-clay;
     }
 }
 
@@ -170,6 +204,9 @@ $badge-color: $blue;
 .air-blue {
     @include color($air-blue);
 }
+.sky {
+    @include color($sky);
+}
 .cyan {
     @include color($cyan);
 }
@@ -185,9 +222,15 @@ $badge-color: $blue;
 .teal {
     @include color($teal);
 }
+.dark-clay {
+    @include color($dark-clay);
+}
 
 .bg-light-blush {
     @include bg($light-blush);
+}
+.bg-wall {
+    @include bg($wall);
 }
 .bg-blush {
     @include bg($blush);
@@ -207,6 +250,9 @@ $badge-color: $blue;
 .bg-light-blue {
     @include bg($light-blue);
 }
+.bg-dark-blue {
+    @include bg($dark-blue);
+}
 .bg-blue {
     @include bg($blue);
 }
@@ -224,6 +270,9 @@ $badge-color: $blue;
 }
 .bg-clay {
     @include bg($clay);
+}
+.bg-concrete {
+    @include bg($concrete);
 }
 
 /*

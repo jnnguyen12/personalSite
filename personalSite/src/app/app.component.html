@@ -21,122 +21,135 @@
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="index.js"></script>
     <title>Joanne Nguyen</title>
   </head>
 
   <body>
     <!--intro-->
-    <div class="container padTB">
-      <div
-        class="row g-5 g-md-0 d-flex h-100 align-items-center justify-content-between"
-      >
-        <div class="col-12 col-md-8 mx-auto mx-md-0" style="z-index: 1">
-          <h2 class="lh-1 fw-light">Hi! I am</h2>
-          <div class="col-md-11 col-lg-10">
+    <div class="container-fluid padTB">
+      <div class="col mx-auto">
+        <div class="container row d-flex h-100 align-items-center justify-content-between mx-auto">
+          <div class="col-12 col-md-8 mx-auto mx-md-0 mb-3 mb-md-0" style="z-index: 1">
+  
+            <h2 class="lh-1 fw-light">Hi! I am</h2>
             <h1 class="display-1 title sand text-start pb-3">Joanne Nguyen</h1>
+            <h3 class="fw-light">
+              I am a <span class="air-blue">front-end developer</span>, with a
+              passion for problem-solving and an attention to detail.
+            </h3>
           </div>
-          <h3 class="fw-light">
-            I am a <span class="air-blue">front-end developer</span>, with a
-            passion for problem-solving and an attention to detail.
-          </h3>
-        </div>
-        <!-- <img class="position-absolute top-0" src="../assets/blob.svg" transform="translate(100 100)" style="z-index: 0;"> -->
-        <div class="col-12 col-lg-3 col-md-4 mx-auto mx-md-0 position-relative">
-          <div class="rounded-5 me">
-            <div class="cover">
-              <img src="../assets/me.JPG" alt="joanne :)" />
+          <!-- <img class="position-absolute top-0" src="../assets/blob.svg" transform="translate(100 100)" style="z-index: 0;"> -->
+          <div class="col-12 col-lg-3 col-md-4 mx-auto mx-md-0 position-relative">
+            <div class="rounded-5 me">
+              <div class="cover">
+                <img src="../assets/me.JPG" alt="joanne :)" />
+              </div>
             </div>
           </div>
         </div>
+
       </div>
     </div>
 
-    <div class="container-fluid padTB bg-clay" style="z-index: 1">
-      <div class="row d-flex align-items-center flex-column mx-auto">
+    <div class="container-fluid padTB bg-wall" style="z-index: 1">
         <div class="col mx-auto">
-          <div class="container d-flex flex-column justify-content-center">
-            <h1 class="display-3 title text-white text-start pb-3">About me</h1>
-            <div class="col-lg-9 ms-5">
-              <div class="about rounded-5 p-5">
-                <h6 class="fw-normal snow lh-lg">
-                  I am Thu 'Joanne' Nguyen, I am a 22 year-old Computer Science
-                  student from Iowa State University, and I am graduating
-                  December 2023. Born and raised in Vietnam, I had the
-                  opportunity to study abroad in the US since 2017 to this day.
-                  <br />
-                  <br />
-                  I have always had a knack for art and design, and with the
-                  combination of my knowledge in computing, I developed a love
-                  for designing websites, with my past experiences ranging from
-                  games, to multimedia, to corporate websites.
-                  <br />
-                  <br />
-                  In my free time, I like to paint, read, and play games. I also
-                  like to pick up a million hobbies that I end up never
-                  finishing, or cook abominable dishes.
-                  <br />
-                  (My favorite book is Gone Girl).
-                </h6>
+          <div class="container d-flex flex-column justify-content-center mx-auto">
+            <h1 class="display-3 title text-start">About me</h1>
+            <div class="row d-flex justify-content-center">
+              <div class="col-lg-9 mx-auto">
+                <div class="about rounded-5">
+                  <h6 class="fw-normal snow lh-lg">
+                    I am Thu 'Joanne' Nguyen, I am a 22 year-old Computer Science
+                    student from Iowa State University, and I am graduating
+                    December 2023. Born and raised in Vietnam, I had the
+                    opportunity to study abroad in the US since 2017 to this day.
+                    <br />
+                    <br />
+                    I have always had a knack for art and design, and with the
+                    combination of my knowledge in computing, I developed a love
+                    for designing websites, with my past experiences ranging from
+                    games, to multimedia, to corporate websites.
+                    <br />
+                    <br />
+                    In my free time, I like to paint, read, and play games. I also
+                    like to pick up a million hobbies that I end up never
+                    finishing, or cook abominable dishes.
+                    <br />
+                    (My favorite book is Gone Girl).
+                  </h6>
+                </div>
               </div>
             </div>
           </div>
-        </div>
       </div>
     </div>
 
-    <div class="padTB">
-      <div class="container">
-        <h1 class="display-4 title cerulean">My Technical Skills</h1>
-        <div class="row p-5 d-flex justify-content-evenly">
-          <div class="col-md-4">
-            <div class="card rounded-2">
-              <!-- Programming languages-->
-              <div class="card-body">
-                <h5>Programming and Markup Languages</h5>
-                <p>
-                  Here are the languages that I am familiar and have worked
-                  with:
-                </p>
-                <span *ngFor="let lang of langs" class="badge rounded-pill bg-light-teal mx-1 mb-2" (mouseenter)="onSelect(lang)">
-                  {{lang}}
-                </span>
+    <section id="section" class="container-fluid section padTB">
+      <div class="col mx-auto">
+        <div class="container d-flex flex-column justify-content-center">
+            <h1 class="display-3 title">My Technical Skills</h1>
+            <div class="row d-flex justify-content-center">
+              <div class="row col-lg-10 position-relative">
+                <div class="col-md-5 skill-branch">
+                  <div class="card skill-card">
+                    <!-- Programming languages-->
+                    <div class="card-body">
+                      <h5 class="card-title">Programming and Markup Languages</h5>
+                      <p>
+                        Here are the languages that I am familiar and have worked
+                        with:
+                      </p>
+                      <span *ngFor="let lang of langs" class="badge rounded-pill bg-light-teal mx-1 mb-2" (mouseenter)="onSelect(lang)">
+                        {{lang}}
+                      </span>
+                    </div>
+                  </div>
+                </div>
+      
               </div>
+              <div class="row col-lg-10 position-relative">
+                <div class="col-md-5 skill-branch">
+                  <div class="card skill-card">
+                    <!--Frameworks / Libraries-->
+                    <div class="card-body">
+                      <h5 class="card-title">Frameworks/Libraries</h5>
+                      <p>
+                        I have used these frameworks for my past projects and/or
+                        professional experiences:
+                      </p>
+                      <span *ngFor="let framework of frameworks" class="badge rounded-pill bg-tan mx-1 mb-2">
+                        {{framework}}
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row col-lg-10 position-relative">
+                <div class="col-md-5 skill-branch">
+                  <!--Tools -->
+                  <div class="card skill-card">
+                    <div class="card-body">
+                      <h5 class="card-title">Tools / Methodologies</h5>
+                      <p>
+                        These are tools / skills / methodologies I was exposed to and
+                        used in my past experiences.
+                      </p>
+                      <span *ngFor="let tool of tools" class="badge rounded-pill bg-pollen mx-1 mb-2">
+                        {{tool}}
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="card">
-              <!--Frameworks / Libraries-->
-              <div class="card-body">
-                <h5>Frameworks/Libraries</h5>
-                <p>
-                  I have used these frameworks for my past projects and/or
-                  professional experiences:
-                </p>
-                <span *ngFor="let framework of frameworks" class="badge rounded-pill bg-tan mx-1 mb-2">
-                  {{framework}}
-                </span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <!--Tools -->
-            <div class="card">
-              <div class="card-body">
-                <h5>Tools / Methodologies</h5>
-                <p>
-                  These are tools / skills / methodologies I was exposed to and
-                  used in my past experiences.
-                </p>
-                <span *ngFor="let tool of tools" class="badge rounded-pill bg-pollen mx-1 mb-2">
-                  {{tool}}
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
-    </div>
+    </section>
 
     <!--work experiences-->
     <div class="padTB">
