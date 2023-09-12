@@ -17,7 +17,7 @@ export class AppComponent {
   ];
 
   tools:string[] = [
-    'Figma', 'Umbraco CMS', 'Postman', 'Intuiface', 'Adobe Photoshop', 'Adobe Illustrator', 'Agile', 'Git', 'Azure DevsOps'
+    'Figma', 'Umbraco CMS', 'Postman', 'Intuiface', 'Adobe Photoshop', 'Adobe Illustrator', 'Agile', 'Git', 'Azure DevOps'
   ];
 
   desc:{[key:string]: string} = {

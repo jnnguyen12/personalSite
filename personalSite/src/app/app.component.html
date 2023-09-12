@@ -36,9 +36,9 @@
           <div class="col-12 col-md-8 mx-auto mx-md-0 mb-3 mb-md-0" style="z-index: 1">
   
             <h2 class="lh-1 fw-light">Hi! I am</h2>
-            <h1 class="display-1 title air-blue text-start pb-3">Joanne Nguyen</h1>
+            <h1 class="display-1 title blue text-start pb-3">Joanne Nguyen</h1>
             <h3 class="fw-light">
-              I am a <span class="air-blue">front-end developer</span>, with a
+              I am a <span class="pollen">front-end developer</span>, with a
               passion for problem-solving and an attention to detail.
             </h3>
           </div>
@@ -93,58 +93,57 @@
         <div class="container d-flex flex-column justify-content-center">
             <h1 class="display-3 title pb-4">My Technical Skills</h1>
             <div class="row d-flex justify-content-center">
-              <div class="row col-lg-10 position-relative">
-                <div class="col-md-6 skill-branch">
-                  <div class="card skill-card">
-                    <!-- Programming languages-->
-                    <div class="card-body">
-                      <h5 class="card-title">Programming and Markup Languages</h5>
-                      <p>
-                        Here are the languages that I am familiar and have worked
-                        with:
-                      </p>
-                      <span *ngFor="let lang of langs" class="badge rounded-pill bg-light-teal mx-1 mb-2" (mouseenter)="onSelect(lang)">
-                        {{lang}}
-                      </span>
-                    </div>
-                  </div>
-                </div>
-      
-              </div>
-              <div class="row col-lg-10 position-relative">
-                <div class="col-md-6 skill-branch">
-                  <div class="card skill-card">
-                    <!--Frameworks / Libraries-->
-                    <div class="card-body">
-                      <h5 class="card-title">Frameworks/Libraries</h5>
-                      <p>
-                        I have used these frameworks for my past projects and/or
-                        professional experiences:
-                      </p>
-                      <span *ngFor="let framework of frameworks" class="badge rounded-pill bg-tan mx-1 mb-2">
-                        {{framework}}
-                      </span>
-                    </div>
+              <div class="col-md-4 skill-branch">
+                <div class="card skill-card">
+                  <!-- Programming languages-->
+                  <div class="card-body">
+                    <h5 class="card-title">Programming and Markup Languages</h5>
+                    <p>
+                      Languages that I am familiar and have worked
+                      with:
+                    </p>
+                    <span *ngFor="let lang of langs" class="badge rounded-pill bg-light-teal mx-1 mb-2" (mouseenter)="onSelect(lang)">
+                      {{lang}}
+                    </span>
                   </div>
                 </div>
               </div>
-              <div class="row col-lg-10 position-relative">
-                <div class="col-md-6 skill-branch">
-                  <!--Tools -->
-                  <div class="card skill-card">
-                    <div class="card-body">
-                      <h5 class="card-title">Tools / Methodologies</h5>
-                      <p>
-                        These are tools / skills / methodologies I was exposed to and
-                        used in my past experiences.
-                      </p>
-                      <span *ngFor="let tool of tools" class="badge rounded-pill bg-pollen mx-1 mb-2">
-                        {{tool}}
-                      </span>
-                    </div>
+              <div class="col-md-4 skill-branch">
+                <div class="card skill-card">
+                  <!--Frameworks / Libraries-->
+                  <div class="card-body">
+                    <h5 class="card-title">Frameworks/Libraries</h5>
+                    <p>
+                      I have used these frameworks for my past projects and/or
+                      professional experiences:
+                    </p>
+                    <span *ngFor="let framework of frameworks" class="badge rounded-pill bg-tan mx-1 mb-2">
+                      {{framework}}
+                    </span>
                   </div>
                 </div>
               </div>
+              <div class="col-md-4 skill-branch">
+                <!--Tools -->
+                <div class="card skill-card">
+                  <div class="card-body">
+                    <h5 class="card-title">Tools / Methodologies</h5>
+                    <p>
+                      These are tools / skills / methodologies I was exposed to and
+                      used in my past experiences.
+                    </p>
+                    <span *ngFor="let tool of tools" class="badge rounded-pill bg-pollen mx-1 mb-2">
+                      {{tool}}
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="row col-lg-10 position-relative">
+              </div> -->
+              <!-- <div class="row col-lg-10 position-relative">
+              </div> -->
+              <!-- <div class="row col-lg-10 position-relative">
+              </div> -->
 
             </div>
           </div>

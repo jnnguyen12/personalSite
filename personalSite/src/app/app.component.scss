@@ -2,27 +2,16 @@
 /*
 colors
 */
-$creme: #f9f7ef;
-$sun: #FFFBEB;
-$light-blush: #F8F6F1;
-$blush: #F1EBE2;
 $tan: #D6C4AE;
 $rose: #CE7777;
-$popsicle: #F6BA6F;
-$silver: #AAAAAA;
 $slate: #151E2E;
-$mustard: #F8B562;
-$orange: #E78336;
-$light-cotton: #e6e9e5;
-$light-cotton-rgb: 230,233,229;
-$cotton: #BDCDD6;
-// $light-blue: #A0C3D2;
 $blue: #76b4cd;
 $ocean: #6096B4;
 $dark-blue: #2B3A55;
 $light-teal: #93BFCF;
 $teal: #205375;
-$moss: #497174;
+// $moss: #497174;
+$moss: #c2ad7f;
 
 $snow: #faf7f7;
 $warm-snow: #f6f2f2;
@@ -37,9 +26,11 @@ $air-blue: #55a5c8;
 $cerulean: #146C94;
 
 $sand: #F6A762;
-$pollen: #e6bbbb;
+$pollen: #dfa9a9;
 $clay: #684343;
 $dark-clay: #3e2828;
+$red: #A73121;
+$brick: #a14e43;
 
 body {
     font-family: 'Roboto Slab', sans-serif;
@@ -80,7 +71,7 @@ h1 {
     font-family: 'Playfair Display', serif;
     line-height: 0.9;
     padding-bottom: 1rem;
-    color: $blue;
+    color: $pollen;
 }
 
 .jumbo {
@@ -151,10 +142,9 @@ svg {
 
 .skill-card {
     border-radius: 0px;
-    padding: 10px;
     margin: 15px;
     border: none;
-    border-left: 3px solid rgba($slate, 0.6);
+    border-bottom: 3px solid rgba($slate, 0.6);
     background-color: rgba(white, 0);
 
     .card-title {
@@ -191,9 +181,6 @@ $badge-color: $blue;
 }
 
 
-.orange {
-    @include color($orange);
-}
 .snow {
     @include color($snow);
 }
@@ -202,6 +189,15 @@ $badge-color: $blue;
 }
 .sand {
     @include color($sand);
+}
+.pollen {
+    @include color($pollen);
+}
+.red {
+    @include color($red);
+}
+.brick {
+    @include color($brick);
 }
 .ocean {
     @include color($ocean);
@@ -234,26 +230,14 @@ $badge-color: $blue;
     @include color($dark-clay);
 }
 
-.bg-light-blush {
-    @include bg($light-blush);
-}
 .bg-wall {
     @include bg($wall);
-}
-.bg-blush {
-    @include bg($blush);
 }
 .bg-tan {
     @include bg($tan);
 }
 .bg-pollen {
     @include bg($pollen);
-}
-.bg-light-cotton {
-    @include bg($light-cotton);
-}
-.bg-cotton {
-    @include bg($cotton);
 }
 .bg-light-blue {
     @include bg($light-blue);
@@ -266,9 +250,6 @@ $badge-color: $blue;
 }
 .bg-rose {
     @include bg($rose);
-}
-.bg-popsicle {
-    @include bg($popsicle);
 }
 .bg-teal {
     @include bg($teal);
