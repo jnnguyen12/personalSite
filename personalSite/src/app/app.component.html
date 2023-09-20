@@ -29,12 +29,13 @@
   </head>
 
   <body>
+    <h5 class="text-center fw-light bg-dark text-light">This site is still in development :) So it is a lil wanky hehe</h5>
     <!--intro-->
     <div class="container-fluid padbig">
       <div class="col mx-auto">
         <div class="container row d-flex h-100 align-items-center justify-content-between mx-auto">
           <div class="col-12 col-md-8 mx-auto mx-md-0 mb-3 mb-md-0" style="z-index: 1">
-  
+            
             <h2 class="lh-1 fw-light">Hi! I am</h2>
             <h1 class="display-1 title blue text-start pb-3">Joanne Nguyen</h1>
             <h3 class="fw-light">
@@ -58,7 +59,7 @@
     <div class="container-fluid padsmall bg-warm-snow" style="z-index: 1">
         <div class="col mx-auto">
           <div class="container d-flex flex-column justify-content-center mx-auto">
-            <h1 class="display-3 title pb-4 text-start">About me</h1>
+            <h1 class="display-4 title pb-4 text-start">About me</h1>
             <div class="row d-flex justify-content-center">
               <div class="col-lg-9 mx-auto">
                 <div class="about rounded-5">
@@ -91,7 +92,7 @@
     <section id="section" class="container-fluid section padsmall">
       <div class="col mx-auto">
         <div class="container d-flex flex-column justify-content-center">
-            <h1 class="display-3 title pb-4">My Technical Skills</h1>
+            <h1 class="display-4 title light-blue pb-4">My Technical Skills</h1>
             <div class="row d-flex justify-content-center">
               <div class="col-md-4 skill-branch">
                 <div class="card skill-card">
@@ -102,10 +103,13 @@
                       Languages that I am familiar and have worked
                       with:
                     </p>
-                    <span *ngFor="let lang of langs" class="badge rounded-pill bg-light-teal mx-1 mb-2" (mouseenter)="onSelect(lang)">
+                    <span *ngFor="let lang of langs" class="badge rounded-pill bg-wall mx-1 mb-2" (mouseenter)="onSelect(lang)" (mouseleave)="onDeselect()">
                       {{lang}}
                     </span>
                   </div>
+                </div>
+                <div style="height: 100px;">
+                  {{currentDescription}}
                 </div>
               </div>
               <div class="col-md-4 skill-branch">
@@ -117,7 +121,7 @@
                       I have used these frameworks for my past projects and/or
                       professional experiences:
                     </p>
-                    <span *ngFor="let framework of frameworks" class="badge rounded-pill bg-tan mx-1 mb-2">
+                    <span *ngFor="let framework of frameworks" class="badge rounded-pill bg-wall mx-1 mb-2">
                       {{framework}}
                     </span>
                   </div>
@@ -132,19 +136,12 @@
                       These are tools / skills / methodologies I was exposed to and
                       used in my past experiences.
                     </p>
-                    <span *ngFor="let tool of tools" class="badge rounded-pill bg-pollen mx-1 mb-2">
+                    <span *ngFor="let tool of tools" class="badge rounded-pill bg-wall mx-1 mb-2">
                       {{tool}}
                     </span>
                   </div>
                 </div>
               </div>
-              <!-- <div class="row col-lg-10 position-relative">
-              </div> -->
-              <!-- <div class="row col-lg-10 position-relative">
-              </div> -->
-              <!-- <div class="row col-lg-10 position-relative">
-              </div> -->
-
             </div>
           </div>
       </div>

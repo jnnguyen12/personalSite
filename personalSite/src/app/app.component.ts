@@ -7,13 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'personalSite';
+  currentLang?: string;
+  currentDescription?: string;
 
   langs:string[] = [
     'C', 'C++', 'Java', 'JavaScript', 'TypeScript', 'SQL', 'C#', "HTML5", 'SCSS', "Razor"
   ];
 
   frameworks:string[] = [
-    'Volley', 'MySQL', 'Bootstrap', 'Angular', 'Pandas', 'Seaborn', 'Tensorflow'
+    '.NET Core', 'Bootstrap', 'Angular', 'Volley', 'Jest', 'MySQL',  'Pandas', 'Seaborn', 'Tensorflow'
   ];
 
   tools:string[] = [
@@ -34,6 +36,13 @@ export class AppComponent {
   }
 
   onSelect(lang:string):void {
-
+    this.currentLang = lang;
+    this.currentDescription = this.desc[lang];
   }
+
+  onDeselect():void {
+    this.currentDescription = 'Hover over a tab to display information!';
+  }
+
+
 }
