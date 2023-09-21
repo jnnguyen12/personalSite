@@ -1,3 +1,5 @@
+![image](https://github.com/jnnguyen12/personalSite/assets/105896253/22de7e9a-9c49-427f-8f04-1c6852011cf4)
+
 # PersonalSite
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.2.
