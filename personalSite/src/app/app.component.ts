@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { faLinkedinIn, faBehance, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faChevronRight, faEnvelope, faDownload } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-root',
@@ -6,6 +8,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  faLinkedin = faLinkedinIn;
+  faBehance = faBehance;
+  faGithub = faGithub;
+  faChevronRight = faChevronRight;
+  faEnvelope = faEnvelope;
+  faDownload = faDownload;
+
   title = 'personalSite';
   currentLang?: string;
   currentDescription?: string;
