@@ -20,7 +20,6 @@
             "outputPath": "dist/personalSite",
             "index": "src/index.html",
             "main": "src/main.ts",
-            "basehref": "/personalSite/",
             "polyfills": [
               "zone.js"
             ],
