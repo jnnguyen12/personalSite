@@ -4,10 +4,10 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --prod --base-href /personalSite",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "deploy": "ng build --configuration production --base-href https://jnnguyen12.github.io/personalSite/ && angular-cli-ghpages --branch gh-pages"
+    "deploy": "ngh --dir=dist/personalSite"
   },
   "private": true,
   "dependencies": {
