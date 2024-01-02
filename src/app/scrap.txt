@@ -1,0 +1,46 @@
+<div class="text-start social-list">
+            <h4 class="fw-normal">Find me on: </h4>
+            <ul class="list-unstyled ms-3">
+              <li>
+                <a href="https://www.behance.net/joannenguyen2">
+                  <fa-icon [icon]="faBehance" class="social" size="lg"></fa-icon>
+                  My UX/UI, fine arts and design portfolio.
+                  <fa-icon [icon]="faChevronRight" class="chevron" size="lg"></fa-icon>
+
+                </a>
+              </li>
+              
+              <li>
+                <a href="https://github.com/jnnguyen12/">
+                  <fa-icon [icon]="faGithub" class="social" size="lg"></fa-icon>
+                  My GitHub, which comprises most of my programming projects — academic and personal.
+                  <fa-icon [icon]="faChevronRight" class="chevron" size="lg"></fa-icon>
+                </a>
+              </li>
+              <li>
+                <a href="https://linkedin.com/in/joannenguyen1212/">
+                  <fa-icon [icon]="faLinkedin" class="social" size="lg"></fa-icon>
+                  My LinkedIn, where you can send me a message!
+                  <fa-icon [icon]="faChevronRight" class="chevron" size="lg"></fa-icon>
+
+                </a>
+              </li>
+              <div class="d-flex align-items-center mt-1">
+                Or, just send me an 
+                <a href="mailto:joanne.nguyen.1212@gmail.com">
+                  <div class="email">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>
+                    <div>email!</div>
+                  </div>
+                </a> 
+              </div>
+
+              <br>
+            </ul>
+
+            <h4 class="fw-normal">My Resume: </h4>
+            <span class="ms-3">Updated as of 12/8/23:</span> 
+            <a href="assets/Joanne_Nguyen_resume.pdf" download>
+              <fa-icon [icon]="faDownload" class="download" size="lg"></fa-icon>
+            </a>
+          </div>
