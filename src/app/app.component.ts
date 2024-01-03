@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
+import { IconProp } from '@fortawesome/fontawesome-svg-core';
 import { faLinkedinIn, faBehance, faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faChevronRight, faEnvelope, faDownload } from '@fortawesome/free-solid-svg-icons';
+import { faChevronRight, faEnvelope, faDownload, faHouse, faUser, faTerminal, faPalette, faSuitcase } from '@fortawesome/free-solid-svg-icons';
+import { Project } from './interfaces/project';
 
 @Component({
   selector: 'app-root',
@@ -18,6 +20,14 @@ export class AppComponent {
   title = 'personalSite';
   currentLang?: string;
   currentDescription?: string;
+
+  navlinks:IconProp[] = [
+    faHouse, faUser, faTerminal, faPalette, faSuitcase
+  ];
+
+  projects: Project[] = [
+    
+  ]
 
   langs:string[] = [
     'C', 'C++', 'Java', 'JavaScript', 'TypeScript', 'SQL', 'C#', "HTML5", 'SCSS', "Razor"

@@ -13,138 +13,171 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <!-- <link rel="stylesheet" href="./styles.css"> -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Quicksand:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
     <title>Joanne Nguyen</title>
   </head>
 
   <body>
-    <h5 class="text-center fw-light bg-dark text-light">This site is still in development :) It is still a little wonky hehe</h5>
+    <!-- nav  -->
+    <div class="float-nav">
+      <div class="float-icons" *ngFor="let icon of navlinks">
+        <div class="circle"></div>
+        <fa-icon [icon]="icon" size="lg"></fa-icon>
+      </div>
+    </div>
+
+    <h5 class="text-center fw-light bg-dark text-light">
+      This site is still in development :) It is still a little wonky hehe
+    </h5>
 
     <!--intro-->
     <div class="container-fluid padbig">
       <div class="col mx-auto">
         <div class="container row intro">
-          <div class="col-12 col-md-8 mx-auto mx-md-0 mb-3 mb-md-0" style="z-index: 1">
-            
+          <div
+            class="col-12 col-md-8 mx-auto mx-md-0 mb-3 mb-md-0"
+            style="z-index: 1"
+          >
             <h4 class="lh-1">Hi! I am</h4>
             <h1 class="display-2 title text-start py-2">Joanne Nguyen</h1>
             <h4 class="">
-              I am a 
+              I am a
               <!-- <div class="pollen marquee">
                 <div>
                   front-end developer
                 </div>
               </div> -->
-              <span class="popsicle">front-end developer</span>, with a passion for problem-solving and an attention to detail.
+              <span class="popsicle">front-end developer</span>, with a passion
+              for problem-solving and an attention to detail.
 
+              <!-- button  -->
               <button type="button" class="btn custom mt-5">Contact me</button>
             </h4>
           </div>
-          <div class="col-12 col-lg-3 col-md-4 mx-auto mx-md-0 position-relative">
+          <div
+            class="col-12 col-lg-3 col-md-4 mx-auto mx-md-0 position-relative"
+          >
             <div class="me neo gold-border">
               <div class="cover">
                 <img src="assets/me.JPG" alt="joanne :)" />
               </div>
             </div>
           </div>
-
-          <!-- button  -->
-
+        </div>
+        <div
+          class="container d-flex flex-column justify-content-center mx-auto">
+          <div class="row d-flex justify-content-center">
+            <!-- <div class="col-md-11 mx-auto"> -->
+              <div class="about lh-lg">
+                <h2 class="title text-start">About me</h2>
+                <p>
+                  My name is Thu 'Joanne' Nguyen, I am a recent Computer Science grad from Iowa State University. I was an international student, and I am interested in various fields combining art, design, UX/UI and front-end to full-stack programming, from web development to game design.
+                </p>
+                <p>
+                  This is my portfolio website, with necessary links lead to my past projects, academic and professional experiences.
+                </p>
+                <p>
+                    In my free time, I like to paint, read, and play games. I also like to pick up a million hobbies that I end up never finishing, or cook abominable dishes :)
+                  </p>
+              <!-- </div> -->
+            </div>
           </div>
-
+        </div>
       </div>
     </div>
 
-    <div class="container-fluid padsmall bg-warm-snow d-none" style="z-index: 1">
-        <div class="col mx-auto">
-          <div class="container d-flex flex-column justify-content-center mx-auto">
-            <h1 class="display-4 title pb-4 text-start">About me</h1>
-            <div class="row d-flex justify-content-center">
-              <div class="col-lg-9 mx-auto">
-                <div class="about rounded-5">
-                  <p class="fw-normal lh-lg">
-                    I am Thu 'Joanne' Nguyen, I am a 22 year-old Computer Science
-                    student from Iowa State University, and I am graduating
-                    December 2023. Born and raised in Vietnam, I had the
-                    opportunity to study abroad in the US since 2017 to this day.
-                    <br />
-                    <br />
-                    I have always had a knack for art and design, and with the
-                    combination of my knowledge in computing, I developed a love
-                    for designing websites, with my past experiences ranging from
-                    games, to multimedia, to corporate websites.
-                    <br />
-                    <br />
-                    In my free time, I like to paint, read, and play games. I also
-                    like to pick up a million hobbies that I end up never
-                    finishing, or cook abominable dishes.
-                    <br />
-                    (My favorite book is Gone Girl).
-                  </p>
-                </div>
-              </div>
+    <div class="padbig container prog">
+        <h2 class="title">&#123; &#123; Programming Projects &#125; &#125;</h2>
+        <p>Below are a few notable projects I have worked on, for educational purposes and entertainment purposes. Hover over the projects so see more!</p>
+
+        <div id="progCarousel" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active" style="height: 100px; width: 100px;">
+            </div>
+            <div class="carousel-item" style="height: 100px; width: 100px;">
+            </div>
+            <div class="carousel-item" style="height: 100px; width: 100px;">
             </div>
           </div>
-      </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#progCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#progCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
     </div>
 
     <section id="section" class="container-fluid section padsmall d-none">
       <div class="col mx-auto">
         <div class="container d-flex flex-column justify-content-center">
-            <h1 class="display-4 title light-blue pb-4">My Technical Skills</h1>
-            <div class="row d-flex justify-content-center">
-              <div class="col-md-4 skill-branch">
-                <div class="card skill-card">
-                  <!-- Programming languages-->
-                  <div class="card-body">
-                    <h5 class="card-title">Programming and Markup Languages</h5>
-                    <p>
-                      Languages that I am familiar and have worked
-                      with:
-                    </p>
-                    <span *ngFor="let lang of langs" class="badge rounded-pill bg-wall mx-1 mb-2" (mouseenter)="onSelect(lang)" (mouseleave)="onDeselect()">
-                      {{lang}}
-                    </span>
-                  </div>
-                </div>
-                <div style="height: 100px;">
-                  {{currentDescription}}
+          <h1 class="display-4 title light-blue pb-4">My Technical Skills</h1>
+          <div class="row d-flex justify-content-center">
+            <div class="col-md-4 skill-branch">
+              <div class="card skill-card">
+                <!-- Programming languages-->
+                <div class="card-body">
+                  <h5 class="card-title">Programming and Markup Languages</h5>
+                  <p>Languages that I am familiar and have worked with:</p>
+                  <span
+                    *ngFor="let lang of langs"
+                    class="badge rounded-pill bg-wall mx-1 mb-2"
+                    (mouseenter)="onSelect(lang)"
+                    (mouseleave)="onDeselect()"
+                  >
+                    {{ lang }}
+                  </span>
                 </div>
               </div>
-              <div class="col-md-4 skill-branch">
-                <div class="card skill-card">
-                  <!--Frameworks / Libraries-->
-                  <div class="card-body">
-                    <h5 class="card-title">Frameworks/Libraries</h5>
-                    <p>
-                      I have used these frameworks for my past projects and/or
-                      professional experiences:
-                    </p>
-                    <span *ngFor="let framework of frameworks" class="badge rounded-pill bg-wall mx-1 mb-2">
-                      {{framework}}
-                    </span>
-                  </div>
+              <div style="height: 100px">
+                {{ currentDescription }}
+              </div>
+            </div>
+            <div class="col-md-4 skill-branch">
+              <div class="card skill-card">
+                <!--Frameworks / Libraries-->
+                <div class="card-body">
+                  <h5 class="card-title">Frameworks/Libraries</h5>
+                  <p>
+                    I have used these frameworks for my past projects and/or
+                    professional experiences:
+                  </p>
+                  <span
+                    *ngFor="let framework of frameworks"
+                    class="badge rounded-pill bg-wall mx-1 mb-2"
+                  >
+                    {{ framework }}
+                  </span>
                 </div>
               </div>
-              <div class="col-md-4 skill-branch">
-                <!--Tools -->
-                <div class="card skill-card">
-                  <div class="card-body">
-                    <h5 class="card-title">Tools / Methodologies</h5>
-                    <p>
-                      These are tools / skills / methodologies I was exposed to and
-                      used in my past experiences.
-                    </p>
-                    <span *ngFor="let tool of tools" class="badge rounded-pill bg-wall mx-1 mb-2">
-                      {{tool}}
-                    </span>
-                  </div>
+            </div>
+            <div class="col-md-4 skill-branch">
+              <!--Tools -->
+              <div class="card skill-card">
+                <div class="card-body">
+                  <h5 class="card-title">Tools / Methodologies</h5>
+                  <p>
+                    These are tools / skills / methodologies I was exposed to
+                    and used in my past experiences.
+                  </p>
+                  <span
+                    *ngFor="let tool of tools"
+                    class="badge rounded-pill bg-wall mx-1 mb-2"
+                  >
+                    {{ tool }}
+                  </span>
                 </div>
               </div>
             </div>
           </div>
+        </div>
       </div>
     </section>
 
