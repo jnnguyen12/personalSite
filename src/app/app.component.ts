@@ -3,6 +3,7 @@ import { IconProp } from '@fortawesome/fontawesome-svg-core';
 import { faLinkedinIn, faBehance, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faChevronRight, faEnvelope, faDownload, faHouse, faUser, faTerminal, faPalette, faSuitcase } from '@fortawesome/free-solid-svg-icons';
 import { Project } from './interfaces/project';
+import * as _projects from '../assets/jsons/projects.json';
 
 @Component({
   selector: 'app-root',
@@ -16,18 +17,24 @@ export class AppComponent {
   faChevronRight = faChevronRight;
   faEnvelope = faEnvelope;
   faDownload = faDownload;
+  // faHouse = faHouse;
+  // faUser = faUser;
+  // faTerminal = faTerminal;
+  // faPalette = faPalette;
+  // faSuitcase = faSuitcase;
 
   title = 'personalSite';
+
   currentLang?: string;
   currentDescription?: string;
-
-  navlinks:IconProp[] = [
+  
+  navlinks: IconProp[] = [
     faHouse, faUser, faTerminal, faPalette, faSuitcase
   ];
+  
+  projects: Project[] = _projects;
+  image:string = this.projects[0].imgSrc.toString();
 
-  projects: Project[] = [
-    
-  ]
 
   langs:string[] = [
     'C', 'C++', 'Java', 'JavaScript', 'TypeScript', 'SQL', 'C#', "HTML5", 'SCSS', "Razor"

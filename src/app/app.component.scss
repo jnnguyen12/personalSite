@@ -254,7 +254,7 @@ svg {
     }
 
     .float-icons:has(~ .float-icons) {
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
 }
 
@@ -331,6 +331,33 @@ svg {
         height: 2px;
         background-color: $gold;
     }
+
+    .carousel {
+        width: 100%;
+        height: 400px;
+    }
+
+    .project-tab {
+        border-radius: $round;
+        margin: 0 10px;
+        height: 100%;
+        width: 100%;
+        border: 2px solid $gold;
+        background-position: center;
+        background-size: cover;
+
+        img {
+            position: absolute;
+        top: 55px;
+        left: -10px;
+        right: 0px;
+        bottom: 0px;
+        margin: auto;
+        height: 130%;
+        transition: all ease 0.4s;
+        }
+    }
+
 }
 
 .skill-branch::before {

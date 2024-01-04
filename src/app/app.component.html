@@ -27,7 +27,7 @@
     <div class="float-nav">
       <div class="float-icons" *ngFor="let icon of navlinks">
         <div class="circle"></div>
-        <fa-icon [icon]="icon" size="lg"></fa-icon>
+        <fa-icon [icon]=icon size="lg"></fa-icon>
       </div>
     </div>
 
@@ -96,12 +96,36 @@
         <p>Below are a few notable projects I have worked on, for educational purposes and entertainment purposes. Hover over the projects so see more!</p>
 
         <div id="progCarousel" class="carousel slide">
-          <div class="carousel-inner">
-            <div class="carousel-item active" style="height: 100px; width: 100px;">
+          <div class="carousel-inner h-100">
+            <div class="carousel-item active row h-100">
+              <div class="col-md-3 h-100">
+                <!-- <div class="project-tab" style="background-image: url(../assets/img/splash.png);"> -->
+                <div class="project-tab" style.background-image="url('{{image}}')">
+                  <!-- <img src="../assets/img/splash.png" alt=""> -->
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="project-tab">
+                  <!-- <img src={{projects[0].imgSrc}} alt=""> -->
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="project-tab">
+                  <!-- <img src={{projects[0].imgSrc}} alt=""> -->
+                </div>
+              </div>
+              <!-- <div class="col-md-3 project-tab"></div>
+              <div class="col-md-3 project-tab"></div> -->
             </div>
-            <div class="carousel-item" style="height: 100px; width: 100px;">
+            <div class="carousel-item row">
+              <div class="col-md-3"></div>
+              <div class="col-md-3"></div>
+              <div class="col-md-3"></div>
             </div>
-            <div class="carousel-item" style="height: 100px; width: 100px;">
+            <div class="carousel-item row">
+              <div class="col-md-3"></div>
+              <div class="col-md-3"></div>
+              <div class="col-md-3"></div>
             </div>
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#progCarousel" data-bs-slide="prev">
