@@ -4,12 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
-      crossorigin="anonymous"
-    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <!-- <link rel="stylesheet" href="./styles.css"> -->
@@ -56,7 +50,7 @@
               for problem-solving and an attention to detail.
 
               <!-- button  -->
-              <button type="button" class="btn custom mt-5">Contact me</button>
+              <button type="button" href="google.com" class="btn custom mt-5">Contact me</button>
             </h4>
           </div>
           <div
@@ -71,61 +65,38 @@
         </div>
         <div
           class="container d-flex flex-column justify-content-center mx-auto">
-          <div class="row d-flex justify-content-center">
-            <!-- <div class="col-md-11 mx-auto"> -->
-              <div class="about lh-lg">
-                <h2 class="title text-start">About me</h2>
-                <p>
-                  My name is Thu 'Joanne' Nguyen, I am a recent Computer Science grad from Iowa State University. I was an international student, and I am interested in various fields combining art, design, UX/UI and front-end to full-stack programming, from web development to game design.
-                </p>
-                <p>
-                  This is my portfolio website, with necessary links lead to my past projects, academic and professional experiences.
-                </p>
-                <p>
-                    In my free time, I like to paint, read, and play games. I also like to pick up a million hobbies that I end up never finishing, or cook abominable dishes :)
-                  </p>
-              <!-- </div> -->
-            </div>
-          </div>
+          <div class="about lh-lg">
+            <h2 class="title text-start">About me</h2>
+            <p>
+              My name is Thu 'Joanne' Nguyen, I am a recent Computer Science grad from Iowa State University. I was an international student, and I am interested in various fields combining art, design, UX/UI and front-end to full-stack programming, from web development to game design.
+            </p>
+            <p>
+              This is my portfolio website, with necessary links lead to my past projects, academic and professional experiences.
+            </p>
+            <p>
+                In my free time, I like to paint, read, and play games. I also like to pick up a million hobbies that I end up never finishing, or cook abominable dishes :)
+              </p>
+          <!-- </div> -->
+        </div>
+          <!-- <div class="row d-flex justify-content-center">
+          </div> -->
         </div>
       </div>
     </div>
 
     <div class="padbig container prog">
         <h2 class="title">&#123; &#123; Programming Projects &#125; &#125;</h2>
-        <p>Below are a few notable projects I have worked on, for educational purposes and entertainment purposes. Hover over the projects so see more!</p>
+        <p class="mb-5">Below are a few notable projects I have worked on, for educational purposes and entertainment purposes. Hover over the projects so see more!</p>
 
-        <div id="progCarousel" class="carousel slide">
-          <div class="carousel-inner h-100">
-            <div class="carousel-item active row h-100">
-              <div class="col-md-3 h-100">
-                <!-- <div class="project-tab" style="background-image: url(../assets/img/splash.png);"> -->
-                <div class="project-tab" style.background-image="url('{{image}}')">
-                  <!-- <img src="../assets/img/splash.png" alt=""> -->
+        <!-- <div id="progCarousel" class="carousel slide">
+          <div class="carousel-inner h-100 w-100">
+            <div class="carousel-item active h-100 w-100">
+              <div class="row h-100 d-flex justify-content-around">
+                <div class="col h-100" *ngFor="let project of projects">
+                  <div class="project-tab" style.background-image="url('{{project.imgSrc}}')">
+                  </div>
                 </div>
               </div>
-              <div class="col-md-3">
-                <div class="project-tab">
-                  <!-- <img src={{projects[0].imgSrc}} alt=""> -->
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="project-tab">
-                  <!-- <img src={{projects[0].imgSrc}} alt=""> -->
-                </div>
-              </div>
-              <!-- <div class="col-md-3 project-tab"></div>
-              <div class="col-md-3 project-tab"></div> -->
-            </div>
-            <div class="carousel-item row">
-              <div class="col-md-3"></div>
-              <div class="col-md-3"></div>
-              <div class="col-md-3"></div>
-            </div>
-            <div class="carousel-item row">
-              <div class="col-md-3"></div>
-              <div class="col-md-3"></div>
-              <div class="col-md-3"></div>
             </div>
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#progCarousel" data-bs-slide="prev">
@@ -136,8 +107,11 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
-        </div>
-    </div>
+        </div> -->
+
+    <app-accordion></app-accordion>
+</div>
+
 
     <section id="section" class="container-fluid section padsmall d-none">
       <div class="col mx-auto">

@@ -2,19 +2,6 @@
 /*
 colors
 */
-$slate: #151E2E;
-$background: #DBD8D5;
-$snow: #EFF2F9;
-$concrete: #7A8290;
-// $sand: #F6A762;
-$gold: #C6A652;
-$pollen: #DFA9A9;
-$popsicle: #FF8A00;
-$chopstick: #9A3B3B;
-$shadow: #BAB8B5;
-/*-------------------------*/
-$radius: 60px;
-$round: 200px;
 
 body {
     font-family: 'Quicksand', sans-serif;
@@ -334,12 +321,31 @@ svg {
 
     .carousel {
         width: 100%;
-        height: 400px;
+        height: 450px;
+    }
+
+    // .carousel-inner {
+    //     display: flex;
+    //     justify-content: center;
+
+    // }
+
+    .carousel-item {
+        display: flex;
+        justify-content: center;
+
+        .row {
+            width: 90%;
+        }
+    }
+
+    .carousel-control-next, .carousel-control-prev {
+        width: 5%;
     }
 
     .project-tab {
         border-radius: $round;
-        margin: 0 10px;
+        margin: 0 20px;
         height: 100%;
         width: 100%;
         border: 2px solid $gold;
@@ -357,6 +363,8 @@ svg {
         transition: all ease 0.4s;
         }
     }
+
+   
 
 }
 
@@ -413,7 +421,7 @@ svg {
 }
 
 .neo-small {
-
+    box-shadow: 5px 5px 10px $shadow, -5px -5px 10px #FCF8F5;
 }
 
 .gold-border {
@@ -430,11 +438,16 @@ svg {
 /*
 laptop screens
 */
-@media (max-width: 1200px) {
+@media (max-width: 1600px) {
     .cover {
         left: -105px !important;
     }
+
+    .container {
+        width: 1200px;
+    }
 }
+
 
 /*
 Ipad horizontals

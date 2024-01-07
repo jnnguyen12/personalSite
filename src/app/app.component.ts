@@ -17,11 +17,6 @@ export class AppComponent {
   faChevronRight = faChevronRight;
   faEnvelope = faEnvelope;
   faDownload = faDownload;
-  // faHouse = faHouse;
-  // faUser = faUser;
-  // faTerminal = faTerminal;
-  // faPalette = faPalette;
-  // faSuitcase = faSuitcase;
 
   title = 'personalSite';
 
@@ -32,9 +27,6 @@ export class AppComponent {
     faHouse, faUser, faTerminal, faPalette, faSuitcase
   ];
   
-  projects: Project[] = _projects;
-  image:string = this.projects[0].imgSrc.toString();
-
 
   langs:string[] = [
     'C', 'C++', 'Java', 'JavaScript', 'TypeScript', 'SQL', 'C#', "HTML5", 'SCSS', "Razor"
