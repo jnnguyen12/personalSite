@@ -250,7 +250,7 @@ svg {
 .about {
     margin-top: 4em;
     background-color: transparent;
-    border: 3px solid $concrete;
+    border: 3px solid darken($shadow, $amount: 5%);
     border-radius: $radius;
     padding: 3em 4em;
 }
