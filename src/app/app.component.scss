@@ -2,13 +2,7 @@
 /*
 colors
 */
-
-body {
-    font-family: 'Quicksand', sans-serif;
-    background-color: $background;
-    color: $slate !important;
-    overflow-x: hidden;
-}
+@import '../variables.scss';
 
 @mixin color($color) {
     color: $color;
@@ -396,37 +390,6 @@ svg {
 //     --bs-badge-padding-x: 1em;
 // }
 
-.btn {
-    display: block;
-    --bs-btn-border-radius: 30px;
-    padding: 8px 15px;
-    background-color: $chopstick;
-    color: $snow;
-    font-weight: 500;
-    font-family: 'Poppins', sans-serif;
-    border: 2px solid transparent;
-    box-shadow: 0px 2px 2px $shadow;
-
-    &:hover {
-        border-color: $chopstick;
-        color: $chopstick;
-    }
-}
-
-/**
-* global styles
-*/
-.neo {
-    box-shadow: 20px 20px 60px $shadow, -20px -20px 60px #FCF8F5;
-}
-
-.neo-small {
-    box-shadow: 5px 5px 10px $shadow, -5px -5px 10px #FCF8F5;
-}
-
-.gold-border {
-    border: 3px solid $gold;
-}
 
 /**
 * colors

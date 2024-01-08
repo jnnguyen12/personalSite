@@ -1,3 +1,5 @@
+@import '../../variables.scss';
+
 .accordion-item {
     background-color: $background;
     border: none;
@@ -36,6 +38,15 @@
     background-size: cover;
     @extend .neo-small;
 
+    &:has(> button[aria-expanded="true"]) {
+        border-color: rgba($shadow, 0.8);
+        box-shadow: inset 3px 3px 7px rgba(#000000, 0.2);
+
+        .button-cover {
+            filter: brightness(98%);
+        }
+    }
+
     .accordion-button {
         width: 100%;
         height: 100%;
@@ -53,7 +64,6 @@
         .button-cover {
             position: absolute;
             width: 40%;
-            // height: 1px;
             bottom: 0;
             left: 0px;
             border-top: 100px solid rgba($background, 1);

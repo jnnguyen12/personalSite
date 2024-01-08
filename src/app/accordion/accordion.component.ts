@@ -11,4 +11,6 @@ import { Project } from '../interfaces/project';
 export class AccordionComponent {
   projects: Project[] = PROJECTS;
 
+  
+
 }

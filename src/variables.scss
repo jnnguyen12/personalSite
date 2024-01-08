@@ -1,0 +1,59 @@
+$slate: #151E2E;
+$background: #DBD8D5;
+$snow: #EFF2F9;
+$concrete: #7A8290;
+// $sand: #F6A762;
+$gold: #C6A652;
+$pollen: #DFA9A9;
+$popsicle: #FF8A00;
+$chopstick: #9A3B3B;
+$shadow: #BAB8B5;
+/*-------------------------*/
+$radius: 60px;
+$round: 200px;
+
+/**
+* global styles
+*/
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: $background;
+    color: $slate !important;
+    overflow-x: hidden;
+}
+
+.btn {
+    display: block;
+    --bs-btn-border-radius: 30px;
+    padding: 8px 15px;
+    background-color: $chopstick;
+    color: $snow;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid transparent;
+    box-shadow: 0px 2px 2px $shadow;
+
+    &:hover, &:focus, &:active {
+        border-color: $chopstick;
+        background: none;
+        background-color: transparent;
+        color: $chopstick;
+    }
+}
+
+.neo {
+    box-shadow: 20px 20px 60px $shadow, -20px -20px 60px #FCF8F5;
+}
+
+.neo-small {
+    box-shadow: 5px 5px 10px $shadow, -5px -5px 10px #FCF8F5;
+}
+
+.neo-small-inset {
+    box-shadow: inset 5px 5px 10px $shadow, inset -5px -5px 10px #FCF8F5;
+}
+
+.gold-border {
+    border: 3px solid $gold;
+}
