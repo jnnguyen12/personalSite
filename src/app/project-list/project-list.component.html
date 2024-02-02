@@ -1,6 +1,6 @@
 <div class="wrapper h-100">
-    <div *ngFor="let project of projects" class="project-item">
-        <div class="content" (click)="selectProject(project)">
+    <div *ngFor="let project of projects" [ngClass]="showingProject == project ? 'project-item selected' : 'project-item'" (click)="selectProject(project)">
+        <div class="content">
             <div class="background"></div>
             <h5 class="title mb-1">{{ project.name }}</h5>
             <h6 class="text-muted mb-1"> {{ project.date }} </h6>
