@@ -1,0 +1,88 @@
+@import '../../variables.scss';
+
+.wrapper {
+    position: relative;
+    margin-left: 1.5em;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 20px;
+        left: 5px;
+        width: 5px;
+        background-color: $slate;
+        opacity: 0.75;
+        height: 100%;
+    }
+
+    .title {
+        font-weight: 600;
+        color: rgba($slate, 0.75);
+        font-family: 'Poppins', sans-serif;
+    }
+
+}
+
+.project-item {
+    position: relative;
+    margin-left: 5px;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 20px;
+        left: -8.3px;
+        width: 22px;
+        height: 22px;
+        border: 6px solid rgba($slate, 0.75);
+        border-radius: 200px;
+        background-color: $background;
+    }
+
+    .content {
+        // border-radius: 20px;
+        margin-left: 1.5em;
+        position: relative;
+        padding: 1.8em;
+        // background: linear-gradient(rgba($slate, 0.75), rgba($slate, 0.75)) no-repeat;
+        // background-position: top left;
+        // background-size: 0%;
+        transition: all 0.4s;
+
+        .background {
+            transition: all 0.3s ease;
+            border-radius: 20px;
+            width: 0px; height: 0px;
+            position: absolute;
+            margin: auto;
+            top: 0; left: 0; bottom: 0; right: 0;
+            background-color: $slate;
+        }
+
+        .desc { display: none; }
+
+        .desc.show {
+            display: block;
+        }
+
+        &:hover {
+            // background-size: 100%;
+            cursor: pointer;
+
+            & > * {
+                color: $background !important;
+            }
+
+            & > *:not(.background) {
+                position: relative;
+                z-index: 3;
+            }
+
+            .background {
+                width: 100%;
+                height: 100%;
+                z-index: 1;
+            }
+        }
+    }
+}

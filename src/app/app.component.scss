@@ -40,6 +40,10 @@ a {
     padding-bottom: 1rem;
     color: $chopstick; 
     font-weight: 600 !important;
+
+    span {
+        line-height: 1.3;
+    }
 }
 
 .jumbo {
@@ -305,13 +309,13 @@ svg {
         width: 100%;
     }
 
-    .title::after {
-        content: "";
-        flex-grow: 1;
-        margin-left: 1.5rem;
-        height: 2px;
-        background-color: $gold;
-    }
+    // .title::after {
+    //     content: "";
+    //     flex-grow: 1;
+    //     margin-left: 1.5rem;
+    //     height: 2px;
+    //     background-color: $gold;
+    // }
 
     .carousel {
         width: 100%;
