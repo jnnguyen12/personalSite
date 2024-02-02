@@ -1,0 +1,13 @@
+<div class="padbig container-fluid px-0 art">
+    <div class="display-4 title center-piece " style="mix-blend-mode: difference;">Art Projects</div>
+    <div class="container center-piece blend ">
+        <h5 class="fw-bold">Art has always played a crucial part in my professional work and a part of who I am. Displayed are few of my best artworks, from 2018 to current. Check out my Behance for more featured artworks!</h5>
+    </div>
+    <div class="row w-100 g-0 max-vh-100">
+      <div *ngFor="let image of imgLinks" class="col-xl-2 col-lg-4 col-6 h-100 position-relative">
+        <!-- <div class="overlay"></div> -->
+        <div class="image" style.background-image="url('{{image}}')"></div>
+      </div>
+
+    </div>
+</div>

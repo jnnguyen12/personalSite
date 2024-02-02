@@ -26,7 +26,7 @@ export class AppComponent {
   navlinks: IconProp[] = [
     faHouse, faUser, faTerminal, faPalette, faSuitcase
   ];
-  
+
 
   langs:string[] = [
     'C', 'C++', 'Java', 'JavaScript', 'TypeScript', 'SQL', 'C#', "HTML5", 'SCSS', "Razor"

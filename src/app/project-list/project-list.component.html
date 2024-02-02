@@ -3,11 +3,15 @@
         <div class="content">
             <div class="background"></div>
             <h5 class="title mb-1">{{ project.name }}</h5>
-            <h6 class="text-muted mb-1"> {{ project.date }} </h6>
-            <h6 class="mb-0"> {{ project.place }} </h6>
+            <h6 class="text-muted mb-1 fw-bold"> {{ project.date }} </h6>
+            <h6 class="mb-0 fw-bold"> {{ project.place }} </h6>
 
             <div [ngClass]="showingProject == project ? 'desc show' : 'desc'">
-                {{ project. desc }}
+                <p>{{ project. desc }}</p>
+
+                <a *ngFor="let button of project.buttonList" type="button" [href]="button.link" target="_blank" class="btn pill-btn">
+                    {{ button.type }}
+                </a>
             </div>
         </div>
     </div>

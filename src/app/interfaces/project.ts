@@ -5,7 +5,8 @@ export interface Project {
     medium: string,
     place?: string
     desc?: string,
-    behance?: string,
-    github?: string
-    other?: string
+    buttonList: {
+        type: string,
+        link: string
+    }[]
 }

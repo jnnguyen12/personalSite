@@ -13,39 +13,6 @@ colors
 }
 
 
-.padbig {
-   display: flex;
-   align-items: center;
-   padding-top: 20vh;
-}
-.padsmall {
-   min-height: 70vh;
-   display: flex;
-   align-items: center;
-   padding-top: 10vh;
-   padding-bottom: 10vh;
-}
-
-h1 {
-    font-weight: 500 !important;
-}
-
-a {
-    text-decoration: none;
-}
-
-.title {
-    font-family: 'Poppins', serif;
-    line-height: 0.9;
-    padding-bottom: 1rem;
-    color: $chopstick; 
-    font-weight: 600 !important;
-
-    span {
-        line-height: 1.3;
-    }
-}
-
 .jumbo {
     padding-top: 350px;
     padding-bottom: 350px;
@@ -196,13 +163,14 @@ svg {
 
 .float-nav {
     position: fixed;
+    z-index: 9999;
     top: 30px;
     left: 20px;
     padding: 15px 25px;
     border-radius: $round;
     width: 50px;
     background-color: $background;
-    box-shadow: 0px 5px 10px $shadow;
+    box-shadow: 0px 5px 10px rgba(gray, 0.45);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -254,9 +222,18 @@ svg {
 .about {
     margin-top: 4em;
     background-color: transparent;
-    border: 3px solid darken($shadow, $amount: 5%);
-    border-radius: $radius;
-    padding: 3em 4em;
+    border: 3px solid rgba($slate, 0.6);
+    border-radius: 20px;
+    padding: 2.5em 3em 2em 3em;
+    position: relative;
+
+    h2 {
+        position: absolute;
+        display: block;
+        padding: 0 1em;
+        background-color: $background;
+        top: -0.5em;
+    }
 }
     @media (max-width: 480px)
     {
@@ -308,62 +285,6 @@ svg {
         align-items: center;
         width: 100%;
     }
-
-    // .title::after {
-    //     content: "";
-    //     flex-grow: 1;
-    //     margin-left: 1.5rem;
-    //     height: 2px;
-    //     background-color: $gold;
-    // }
-
-    .carousel {
-        width: 100%;
-        height: 450px;
-    }
-
-    // .carousel-inner {
-    //     display: flex;
-    //     justify-content: center;
-
-    // }
-
-    .carousel-item {
-        display: flex;
-        justify-content: center;
-
-        .row {
-            width: 90%;
-        }
-    }
-
-    .carousel-control-next, .carousel-control-prev {
-        width: 5%;
-    }
-
-    .project-tab {
-        border-radius: $round;
-        margin: 0 20px;
-        height: 100%;
-        width: 100%;
-        border: 2px solid $gold;
-        background-position: center;
-        background-size: cover;
-
-        img {
-            position: absolute;
-        top: 55px;
-        left: -10px;
-        right: 0px;
-        bottom: 0px;
-        margin: auto;
-        height: 130%;
-        transition: all ease 0.4s;
-        }
-    }
-
-   
-
 }
 
 .skill-branch::before {
@@ -405,7 +326,7 @@ svg {
 /*
 laptop screens
 */
-@media (max-width: 1600px) {
+@media (min-width: 1200px) and (max-width: 1600px) {
     .cover {
         left: -105px !important;
     }

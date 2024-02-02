@@ -24,22 +24,57 @@ body {
     overflow-x: hidden;
 }
 
-.btn {
+.padbig {
+    display: flex;
+    align-items: center;
+    padding-top: 18vh;
+ }
+ .padsmall {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+ }
+ 
+ h1 {
+     font-weight: 500 !important;
+ }
+ 
+ a {
+     text-decoration: none;
+ }
+ 
+ .title {
+     font-family: 'Poppins', serif;
+     line-height: 0.9;
+     padding-bottom: 1rem;
+     color: $chopstick; 
+     font-weight: 600 !important;
+ 
+     span {
+         line-height: 1.3;
+     }
+ }
+
+.btn{ z-index: 9999};
+
+.contact-btn {
     display: block;
     --bs-btn-border-radius: 30px;
-    padding: 8px 15px;
+    padding: 6px 15px;
     background-color: $chopstick;
     color: $snow;
-    font-weight: 500;
+    font-weight: 600;
     font-family: 'Poppins', sans-serif;
-    border: 2px solid transparent;
+    border: 3px solid transparent;
     box-shadow: 0px 2px 2px $shadow;
 
     &:hover, &:focus, &:active {
-        border-color: $chopstick;
+        border-color: $popsicle;
         background: none;
         background-color: transparent;
-        color: $chopstick;
+        color: $popsicle;
     }
 }
 
@@ -56,5 +91,5 @@ body {
 }
 
 .gold-border {
-    border: 3px solid $gold;
+    border: 3px solid $popsicle;
 }
