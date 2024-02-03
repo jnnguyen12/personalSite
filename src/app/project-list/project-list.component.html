@@ -1,4 +1,4 @@
-<div class="wrapper h-100">
+<div class="wrapper h-100" id="projsection">
     <div *ngFor="let project of projects" [ngClass]="showingProject == project ? 'project-item selected' : 'project-item'" (click)="selectProject(project)">
         <div class="content">
             <div class="background"></div>

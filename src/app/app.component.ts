@@ -23,8 +23,12 @@ export class AppComponent {
   currentLang?: string;
   currentDescription?: string;
   
-  navlinks: IconProp[] = [
-    faHouse, faUser, faTerminal, faPalette, faSuitcase
+  navlinks: {section: string, prop: IconProp}[] = [
+    {section: 'home', prop: faHouse},
+    {section: 'about', prop: faUser},
+    {section: 'projsection', prop: faTerminal},
+    {section: 'artsection', prop: faPalette},
+    {section: 'worksection', prop: faSuitcase}
   ];
 
 
