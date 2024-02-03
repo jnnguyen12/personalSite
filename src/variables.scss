@@ -1,4 +1,5 @@
 $slate: #151E2E;
+$charcoal: #29313f;
 $background: #DBD8D5;
 $background2: #cfcecb;
 $snow: #EFF2F9;
@@ -59,8 +60,9 @@ body {
 
 .btn{ z-index: 9999};
 
-.contact-btn {
+.big-btn {
     display: block;
+    width: fit-content;
     --bs-btn-border-radius: 30px;
     padding: 6px 15px;
     background-color: $chopstick;

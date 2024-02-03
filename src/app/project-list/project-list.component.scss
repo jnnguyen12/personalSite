@@ -41,6 +41,7 @@
         border: 6px solid rgba($slate, 0.75);
         border-radius: 200px;
         background-color: $background;
+        transition: all ease 0.3s;
     }
 
     .background {
@@ -69,6 +70,10 @@
             color: $background !important;
         }
 
+        & > .content > .text-muted {
+            opacity: 0.8;
+        }
+
         & > .content > *:not(.background) {
             position: relative;
             z-index: 3;
@@ -81,6 +86,10 @@
 
     &:not(.selected):hover {
         cursor: pointer;
+
+        &::before {
+            border-color: $chopstick
+        }
 
         .background {
             background-color: rgba($slate, 0.9);

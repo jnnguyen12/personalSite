@@ -1,13 +1,24 @@
 <div class="padbig container-fluid px-0 art">
-    <div class="display-4 title center-piece " style="mix-blend-mode: difference;">Art Projects</div>
-    <div class="container center-piece blend ">
-        <h5 class="fw-bold">Art has always played a crucial part in my professional work and a part of who I am. Displayed are few of my best artworks, from 2018 to current. Check out my Behance for more featured artworks!</h5>
+  <div class="container center-piece">
+      <div class="display-4 title">
+        Art Works
+      </div>
+      <h5 class="fw-bold">Art has always played a crucial part in my professional work and a part of who I am. Displayed are few of my best artworks, from 2018 to current. Check out my Behance for more featured artworks!</h5>
+      <a type="button" href="https://www.behance.net/joannenguyen2" target="_blank" class="btn big-btn mt-4 align-self-center">My Behance</a>
     </div>
     <div class="row w-100 g-0 max-vh-100">
-      <div *ngFor="let image of imgLinks" class="col-xl-2 col-lg-4 col-6 h-100 position-relative">
-        <!-- <div class="overlay"></div> -->
-        <div class="image" style.background-image="url('{{image}}')"></div>
+      <div *ngFor="let image of imgLinks" class="col-xl-2 col-lg-4 col-6 h-100 position-relative" >
+        <div class="overlay">
+          <div class="info">
+            <h5 class="mb-1">{{ image.name }}</h5>
+            <!-- <h6>{{image.medium}}</h6> -->
+            <p class="text-muted">- {{ image.medium }} -</p>
+            <p>{{ image.year }}</p>
+          </div>
+        </div>
+        <div class="image" style.background-image="url('{{image.link}}')">
+        <!-- <div class="image" [style.background]="'url(' + image.link + ') cover no-repeat fixed'"> -->
+        </div>
       </div>
-
     </div>
 </div>
