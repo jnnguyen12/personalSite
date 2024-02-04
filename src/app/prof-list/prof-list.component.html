@@ -1,0 +1,20 @@
+<div class="padbig container prof">
+    <div class="row w-100 h-100 d-flex align-items-center">
+      <div class="col-lg-7 h-100">
+        <div class="h-100" *ngIf="selectedCategory != null">
+          <div class="pill" *ngFor="let item of selectedCategory.items">
+            {{ item }}
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-5">
+        <div class="display-4 title row">
+          <span class="mb-3">Proficiencies</span>
+        </div>
+        <div [ngClass]="'button-tab ' + (selectedCategory === category && 'selected')" *ngFor="let category of categories" (click)="selectCategory(category)">
+          <fa-icon [icon]="selectedCategory === category ? faCircleDot : faCircleChevronLeft" size="lg"></fa-icon>
+          {{ category.name }}
+        </div>
+      </div>
+    </div>
+  </div>

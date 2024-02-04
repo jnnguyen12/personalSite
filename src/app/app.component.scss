@@ -281,12 +281,11 @@ svg {
     }
 }
 
-.prog {
+.prog, .prof {
     display: flex;
     flex-direction: column;
     .title {
         display: flex;
-
         align-items: center;
         width: 100%;
     }
@@ -340,7 +339,6 @@ laptop screens
         width: 1200px;
     }
 }
-
 
 /*
 Ipad horizontals

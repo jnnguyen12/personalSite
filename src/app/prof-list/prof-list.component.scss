@@ -1,0 +1,63 @@
+@import '../../variables.scss';
+
+.prof {
+}
+
+.button-tab {
+    cursor: pointer;
+    padding: 1em 2em;
+    background: linear-gradient($charcoal, $charcoal) no-repeat;
+    background-position: left bottom;
+    background-size: 0%;
+    border-radius: $radius;
+    border: 3px solid rgba($slate, 0.5);
+    margin-bottom: 20px;
+    width: fit-content;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin-left: 30px;
+    transition: background-size 0.4s, border-color 0.1s, margin-left 0.4s, background 0.4s;
+
+    &.selected {
+        background-size: 100%;
+        color: $background !important;
+        margin-left: 0;
+        background: linear-gradient($slate, $slate) no-repeat;
+        border-color: $slate;
+
+        & > * {
+            color: $popsicle !important;
+        }
+    }
+
+    fa-icon {
+        color: rgba($slate, 0.5);
+        margin-right: 10px;
+        transition: all 0.3s ease;
+    }
+
+    &:hover:not(.selected) {
+        background-size: 100%;
+        color: $background !important;
+        border-color: $charcoal;
+        // @extend .neo-small;
+
+        & > * {
+            color: $chopstick !important;
+        }
+    }
+}
+
+.pill {
+    padding: 10px 20px;
+    // border: 2px solid rgba($charcoal, 0.5);
+    background-color: $slate;
+    border-radius: $radius;
+    display: inline-flex;
+    color: $background;
+
+    &:has(~ .pill) {
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+}

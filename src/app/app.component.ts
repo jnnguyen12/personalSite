@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
 import { faLinkedinIn, faBehance, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faChevronRight, faEnvelope, faDownload, faHouse, faUser, faTerminal, faPalette, faSuitcase } from '@fortawesome/free-solid-svg-icons';
-import { Project } from './interfaces/project';
+import { Project } from './interfaces/interfaces';
 import * as _projects from '../assets/jsons/projects.json';
 
 @Component({
@@ -26,23 +26,12 @@ export class AppComponent {
   navlinks: {section: string, prop: IconProp}[] = [
     {section: 'home', prop: faHouse},
     {section: 'about', prop: faUser},
-    {section: 'projsection', prop: faTerminal},
-    {section: 'artsection', prop: faPalette},
+    {section: 'programming', prop: faTerminal},
+    {section: 'artworks', prop: faPalette},
     {section: 'worksection', prop: faSuitcase}
   ];
 
 
-  langs:string[] = [
-    'C', 'C++', 'Java', 'JavaScript', 'TypeScript', 'SQL', 'C#', "HTML5", 'SCSS', "Razor"
-  ];
-
-  frameworks:string[] = [
-    '.NET Core', 'Bootstrap', 'Angular', 'Volley', 'Jest', 'MySQL',  'Pandas', 'Seaborn', 'Tensorflow'
-  ];
-
-  tools:string[] = [
-    'Figma', 'Umbraco CMS', 'Postman', 'Intuiface', 'Adobe Photoshop', 'Adobe Illustrator', 'Agile', 'Git', 'Azure DevOps'
-  ];
 
   desc:{[key:string]: string} = {
     "C": "I got to learn C in my COMS327 class where we have to implement a Pokémon game, using NCurses and applicable data structures. I used C for the first part of the application, where most of the logic was developed.",

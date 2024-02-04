@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { PROJECTS } from '../projects';
-import { Project } from '../interfaces/project';
+import { Project } from '../interfaces/interfaces';
 
 
 @Component({

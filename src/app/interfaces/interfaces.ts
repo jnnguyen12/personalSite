@@ -10,3 +10,8 @@ export interface Project {
         link: string
     }[]
 }
+
+export interface Proficiency {
+    name: string,
+    items: string[]
+}
