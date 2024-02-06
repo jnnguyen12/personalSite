@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ProfListComponent } from './prof-list.component';
+import { WorkListComponent } from './work-list.component';
 
-describe('ProfListComponent', () => {
-  let component: ProfListComponent;
-  let fixture: ComponentFixture<ProfListComponent>;
+describe('WorkListComponent', () => {
+  let component: WorkListComponent;
+  let fixture: ComponentFixture<WorkListComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ProfListComponent ]
+      declarations: [ WorkListComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(ProfListComponent);
+    fixture = TestBed.createComponent(WorkListComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

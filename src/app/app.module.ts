@@ -7,6 +7,7 @@ import { ProjectListComponent } from './project-list/project-list.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ArtListComponent } from './art-list/art-list.component';
 import { ProfListComponent } from './prof-list/prof-list.component';
+import { WorkListComponent } from './work-list/work-list.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { ProfListComponent } from './prof-list/prof-list.component';
     AccordionComponent,
     ProjectListComponent,
     ArtListComponent,
-    ProfListComponent
+    ProfListComponent,
+    WorkListComponent
   ],
   imports: [
     BrowserModule,

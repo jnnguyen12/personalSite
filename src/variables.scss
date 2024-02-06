@@ -18,6 +18,10 @@ $round: 200px;
 * global styles
 */
 
+#home, #about, #artworks, #proficiencies, #programming, #work {
+    scroll-snap-align: start;
+}
+
 body {
     font-family: 'Quicksand', sans-serif;
     background-color: $background;
@@ -132,6 +136,16 @@ Ipad horizontals
 */
 @media (max-width: 1024px) {
 
+}
+
+@media (max-width: 969px) {
+    .padbig {
+        padding-top: 10vh;
+     }
+    
+     .margbig {
+        margin-top: 10vh;
+     }
 }
 
 /*

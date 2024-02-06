@@ -85,3 +85,15 @@
     }
     
 }
+
+@media (max-width: 969px) {
+    .col-xl-2, .image {
+        max-height: 33.33vh;
+    }
+}
+
+@media (max-width: 1024px) {
+    .col-xl-2, .image {
+        max-height: 50vh;
+    }
+}

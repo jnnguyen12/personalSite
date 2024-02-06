@@ -319,3 +319,30 @@ svg {
 //     --bs-badge-padding-x: 1em;
 // }
 
+@media (max-width: 969px) {
+    body {
+        scroll-snap-type: y proximity;
+    }
+
+    .disclaimer {
+        margin-top: 80px;
+    }
+
+    .float-nav {
+        top: 10px;
+        // border-radius: 0;
+        width: 400px;
+        padding: 8px 15px;
+        max-width: 90%;
+        left: 0; right: 0;
+        margin: auto;
+        flex-direction: row;
+        justify-content: space-around;
+
+        .float-icons:has(~ .float-icons) {
+            margin-bottom: 0px;
+            // margin-right: 10px;
+        }
+
+    }
+}

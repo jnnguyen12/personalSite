@@ -28,7 +28,7 @@
       </div>
     </div>
 
-    <h5 class="text-center fw-light bg-dark text-light">
+    <h5 class="text-center fw-light bg-dark text-light disclaimer">
       This site is still in development :) It is still a little wonky hehe
     </h5>
 
@@ -53,7 +53,10 @@
               for problem-solving and an attention to detail.
 
               <!-- button  -->
-              <button type="button" href="google.com" class="btn big-btn mt-5">Contact me</button>
+              <a type="button" href="google.com" class="btn big-btn mt-5" href="assets/Joanne_Nguyen_resume.pdf" download>
+                My resume
+                <fa-icon [icon]="faDownload" class="ms-2" size="lg"></fa-icon>
+              </a>
             </h4>
           </div>
           <div
@@ -94,12 +97,10 @@
     <app-art-list id="artworks"></app-art-list>
 
     <!-- profeciencies -->
-    <app-prof-list id="profeciencies"></app-prof-list>
+    <app-prof-list id="proficiencies"></app-prof-list>
 
     <!--work experiences-->
-    <div class="padTB">
-      <div></div>
-    </div>
+    <app-work-list id="work"></app-work-list>
 
 
     <!--reviews-->

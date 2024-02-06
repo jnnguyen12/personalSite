@@ -3,6 +3,16 @@
 .prof {
 }
 
+.donut {
+    border-radius: 20px;
+    background: url('../../assets/img/donut2.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    width: 450px;
+}
+
 .button-tab {
     cursor: pointer;
     padding: 1em 2em;
@@ -60,4 +70,12 @@
         margin-right: 10px;
         margin-bottom: 10px;
     }
+}
+
+@media (max-width: 969) {
+    .button-tab {
+        padding: 0.5em 1em;
+        margin-bottom: 10px;
+    }
+
 }
