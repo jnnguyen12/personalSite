@@ -106,3 +106,40 @@ body {
 .gold-border {
     border: 3px solid $popsicle;
 }
+
+/**
+* colors
+*/
+.popsicle {
+    color: $popsicle;
+}
+
+/*
+laptop screens
+*/
+@media (min-width: 1200px) and (max-width: 1600px) {
+    .cover {
+        left: -105px !important;
+    }
+
+    .container {
+        width: 1200px;
+    }
+}
+
+/*
+Ipad horizontals
+*/
+@media (max-width: 1024px) {
+
+}
+
+/*
+mobile
+*/
+@media (max-width: 480px) {
+    .cover {
+        top: -70px !important;
+        left: -50px !important;
+    }
+}
