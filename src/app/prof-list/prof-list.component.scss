@@ -66,13 +66,6 @@ h6 {
     cursor: pointer;
 } 
 
-hr {
-    width: 80%;
-    border-radius: $radius;
-    border: 2px solid $popsicle;
-    margin: 20px auto;
-}
-
 .pill {
     padding: 10px 20px;
     background-color: $slate;
@@ -80,10 +73,10 @@ hr {
     display: inline-flex;
     color: $background;
     width: fit-content;
+    margin-bottom: 10px;
 
     &:has(~ .pill) {
         margin-right: 10px;
-        margin-bottom: 10px;
     }
 }
 
