@@ -8,8 +8,6 @@ import { Proficiency } from '../interfaces/interfaces';
   styleUrls: ['./prof-list.component.scss']
 })
 
-
-
 export class ProfListComponent {
   faCircleChevronLeft = faCircleChevronLeft;
   faCircleDot = faCircleDot;
@@ -21,7 +19,7 @@ export class ProfListComponent {
   ];
 
   frameworks: string[] = [
-    '.NET Core', 'Bootstrap', 'Angular', 'Volley', 'Jest', 'MySQL', 'THREE.js', 'React.js', "Node.js"
+    '.NET', '.ASP.NET', 'Bootstrap', 'Angular', 'Volley', 'Jest', 'MySQL', 'THREE.js', 'React.js', "Node.js"
   ];
 
   tools:string[] = [
