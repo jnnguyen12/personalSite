@@ -1,3 +1,10 @@
+Access the site here:
+https://jnnguyen12.github.io/portfolio/
+
+Ver 1.0:
+![image](https://github.com/jnnguyen12/portfolio/assets/105896253/e768255f-734b-4f10-b08f-cd900187a843)
+
+Ver 0.0:
 ![image](https://github.com/jnnguyen12/personalSite/assets/105896253/22de7e9a-9c49-427f-8f04-1c6852011cf4)
 
 # PersonalSite
