@@ -10,8 +10,8 @@
         <a type="button" href="https://github.com/jnnguyen12/" target="_blank" class="btn big-btn mt-4">My Github</a>
       </div>
       <div class="col-lg-7 col-xl-6 h-100">
-        <div class="wrapper h-100">
-            <div *ngFor="let project of projects" [ngClass]="showingProject == project ? 'project-item selected' : 'project-item'" (click)="selectProject(project)">
+        <div class="tree-wrapper h-100">
+            <div *ngFor="let project of projects" [ngClass]="showingProject == project ? 'tree-item selected' : 'tree-item'" (click)="selectProject(project)">
                 <div class="content">
                     <div class="background"></div>
                     <h5 class="title mb-1">{{ project.name }}</h5>

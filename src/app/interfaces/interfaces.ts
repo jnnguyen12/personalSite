@@ -11,6 +11,14 @@ export interface Project {
     }[]
 }
 
+export interface WorkExperience {
+    company: string,
+    role: string,
+    dateFrom: string,
+    dateTo: string,
+    desc: string 
+}
+
 export interface Proficiency {
     name: string,
     items: string[]

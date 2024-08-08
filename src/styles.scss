@@ -1,0 +1,153 @@
+@import './variables.scss';
+
+.tree-wrapper {
+    position: relative;
+    margin-left: 1em;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0px;
+        left: 5px;
+        width: 5px;
+        background-color: $slate;
+        opacity: 0.75;
+        height: 100%;
+    }
+
+    .title {
+        padding-bottom: 0.5rem;
+        font-weight: 600;
+        color: rgba($slate, 0.85);
+        font-family: 'Poppins', sans-serif;
+    }
+
+}
+
+.tree-item {
+    position: relative;
+    margin-left: 5px;
+
+    &:has(~ .tree-item) {
+        margin-bottom: 10px;
+    }
+
+    // the circle 
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0px;
+        left: -8.5px;
+        width: 22px;
+        height: 22px;
+        border: 6px solid rgba($slate, 0.75);
+        border-radius: 200px;
+        background-color: $background;
+        transition: all ease 0.3s;
+    }
+
+    .background {
+        transition: all 0.3s ease;
+        border-radius: 20px;
+        width: 0px; height: 0px;
+        position: absolute;
+        margin: auto;
+        top: 0; left: 0; bottom: 0; right: 0;
+        background-color: $slate;
+    }
+
+    .date {
+        font-style: italic;
+    }
+
+    & > .content > * { 
+        transition: 0.2s ease;
+    }
+
+    &.selected, &:hover {
+        .background {
+            width: 100% !important;
+            height: 100% !important;
+            z-index: 1;
+            @extend .neo-small;
+        }
+
+        
+        & .content *:not(.role) {
+            color: $background !important;
+        }
+        
+        .role {
+            color: $peach !important;
+        }
+
+        & > .content > .text-muted {
+            opacity: 0.8;
+        }
+
+        & > .content > *:not(.background) {
+            position: relative;
+            z-index: 3;
+        }
+    }
+
+    &.selected{
+        &::before {
+            background-color: $popsicle;
+            border-color: $popsicle;
+        }
+
+        & .role {
+            color: rgba($popsicle, 0.8) !important;
+        }
+
+    }
+
+    &:not(.selected):hover {
+        cursor: pointer;
+
+        &::before {
+            border-color: $chopstick
+        }
+
+        .background {
+            background-color: rgba($slate, 0.9);
+        }
+    }
+
+    .content {
+        margin-left: 1.5em;
+        position: relative;
+        padding: 1.8em;
+        transition: all 0.4s;
+
+        .desc { 
+            display: none;
+            margin-top: 1em;
+         }
+
+        .desc.show {
+            display: block;
+        }
+    }
+
+    .pill-btn {
+        padding: 5px 15px;
+        border-radius: $radius;
+        background-color: $chopstick;
+        border: 2px solid $chopstick;
+        color: $background;
+        font-weight: 600;
+        font-family: 'Poppins', sans-serif;
+    
+        &:has(~.pill-btn) {
+            margin-right: 10px;
+        }
+    
+        &:hover, &:focus, &:active {
+            background-color: transparent;
+            border: 2px solid $popsicle;
+            color: $popsicle;
+        }
+    }
+}

@@ -8,6 +8,7 @@ $concrete: #7A8290;
 $gold: #C6A652;
 $pollen: #DFA9A9;
 $popsicle: #FF8A00;
+$peach: #C08261;
 $chopstick: #9A3B3B;
 $shadow: #BAB8B5;
 /*-------------------------*/
@@ -51,6 +52,10 @@ body {
  
  h1 {
      font-weight: 500 !important;
+ }
+
+ h6 {
+    font-size: 18px;
  }
  
  a {

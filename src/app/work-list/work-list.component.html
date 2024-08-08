@@ -1,3 +1,35 @@
-<div class="margbig py-5 container-fluid px-0 work text-center align-items-center justify-content-center bg-dark text-light">
-        <h5 class="m-0">Coming soon!</h5>
-</div>
+<div class="padbig container prog">
+        <div class="row d-flex align-items-center g-5">
+          <!-- left column -->
+          <div class="col-lg-4 col-xl-5 mb-4 mb-lg-0">
+            <div class="display-4 title row">
+              <div class="mb-3 opacity-75">/*</div>
+              <span class="mb-3 ms-3">Work Experiences</span>
+              <div class="mb-4 opacity-75">*/</div>
+            </div>
+          </div>
+          <!-- right column -->
+          <div class="col-lg-8 col-xl-7 h-100">
+            <div class="tree-wrapper h-100">
+              <div *ngFor="let experience of experiences" [ngClass]="showingExperience == experience ? 'tree-item selected' : 'tree-item'" (click)="selectExperience(experience)">
+                <div class="content">
+                    <div class="background"></div>
+                    <div class="d-flex justify-content-between">
+                      <div>
+                        <h5 class="title">{{ experience.company }}</h5>
+                        <h6 class="fw-bold role"> {{ experience.role }} </h6>
+                      </div>
+                        <p class="mb-0 fw-bold text-muted date"> {{ experience.dateFrom }} - {{ experience.dateTo }} </p>
+                    </div>
+
+                    <div [ngClass]="showingExperience == experience ? 'desc show' : 'desc'">
+                      <div *ngFor="let desc of descriptions">
+                        <p>{{ desc }}</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
