@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
 import { faLinkedinIn, faBehance, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faWrench, faChevronRight, faEnvelope, faDownload, faHouse, faUser, faTerminal, faPalette, faSuitcase } from '@fortawesome/free-solid-svg-icons';
@@ -11,29 +11,22 @@ import * as _projects from '../assets/jsons/projects.json';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  faLinkedin = faLinkedinIn;
-  faBehance = faBehance;
-  faGithub = faGithub;
-  faChevronRight = faChevronRight;
-  faEnvelope = faEnvelope;
   faDownload = faDownload;
-  faWrench = faWrench;
-
   title = 'personalSite';
+  navbar: HTMLElement | null = null;
+  navbarHeight = 0;
+  lastScrollTop = 0;
 
   currentLang?: string;
   currentDescription?: string;
-  
-  navlinks: {section: string, prop: IconProp}[] = [
-    {section: 'home', prop: faHouse},
-    {section: 'about', prop: faUser},
-    {section: 'programming', prop: faTerminal},
-    {section: 'artworks', prop: faPalette},
-    {section: 'proficiencies', prop: faWrench},
-    {section: 'work', prop: faSuitcase}
-  ];
 
-
+  navlinks: {section: string, name: string}[] = [
+    {section: 'about', name: 'about me'},
+    {section: 'work', name: 'work experiences'},
+    {section: 'artworks', name: 'art projects'},
+    {section: 'programming', name: 'programming projects'},
+    {section: 'contact', name: 'contact me!'},
+  ] 
 
   desc:{[key:string]: string} = {
     "C": "I got to learn C in my COMS327 class where we have to implement a Pokémon game, using NCurses and applicable data structures. I used C for the first part of the application, where most of the logic was developed.",
@@ -48,6 +41,10 @@ export class AppComponent {
     "Razor": "I got to work with Razor as a backend language for Umbraco CMS during my internship at RDI.",
   }
 
+  ngOnInit() {
+    this.navbar = document.getElementById('nav');
+  }
+
   onSelect(lang:string):void {
     this.currentLang = lang;
     this.currentDescription = this.desc[lang];
@@ -55,6 +52,26 @@ export class AppComponent {
 
   onDeselect():void {
     this.currentDescription = 'Hover over a tab to display information!';
+  }
+
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    const scrollTop = window.scrollY;
+    const navBarStyle = this.navbar!.style!;
+
+    if (!this.navbarHeight) 
+      this.navbarHeight = this.navbar!.getBoundingClientRect().height;
+
+    if (this.navbar) {
+      if (scrollTop > this.lastScrollTop) {
+        navBarStyle.top = `-${this.navbarHeight}px`;
+        console.log(navBarStyle.top);
+      } else {
+        navBarStyle.top = '0';
+      }
+    }
+
+    this.lastScrollTop = scrollTop;
   }
 
 

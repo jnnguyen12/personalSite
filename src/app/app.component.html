@@ -18,20 +18,27 @@
 
   <body>
     <!-- nav  -->
-    <div class="float-nav">
-      <div class="float-icons" *ngFor="let icon of navlinks">
-        <a [href]="'#' + icon.section">
-          <div class="circle"></div>
-          <fa-icon [icon]=icon.prop size="lg">
-          </fa-icon>
+    <div class="float-nav" id="nav">
+      <div class="container d-flex justify-content-between align-items-center">
+        <a href="#home">
+          <img src="assets/rabbit.svg" />
         </a>
+
+        <div class="d-flex justify-content-center align-items-center" >
+          <div class="item" [ngClass]="{'last-item': last}" *ngFor="let link of navlinks; let last = last">
+            <a [href]="'#' + link.section">
+              {{ link.name }}
+            </a>
+            <hr />
+          </div>
+        </div>
       </div>
     </div>
 
-    <h5 class="text-center fw-light bg-dark text-light disclaimer">
+    <!-- <h5 class="text-center fw-light bg-dark text-light disclaimer">
       This site is still in development :) It is still a little wonky hehe
-    </h5>
-
+    </h5> -->
+    
     <!--intro-->
     <div class="container-fluid padbig" id="home">
       <div class="col mx-auto">
@@ -96,7 +103,7 @@
       <!-- art projects -->
     <app-art-list id="artworks"></app-art-list>
 
-    <!-- profeciencies -->
+    <!-- proficiencies -->
     <app-prof-list id="proficiencies"></app-prof-list>
 
     <!--work experiences-->

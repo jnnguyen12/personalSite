@@ -45,6 +45,10 @@ a {
   text-decoration: none;
 }
 
+hr {
+  opacity: 1;
+}
+
 .title {
   font-family: "Poppins", serif;
   line-height: 0.9;

@@ -1,10 +1,8 @@
 $slate: #151E2E;
-$charcoal: #29313f;
+$light-slate: #393F49;
 $background: #DBD8D5;
-$background2: #cfcecb;
 $snow: #EFF2F9;
 $concrete: #7A8290;
-// $sand: #F6A762;
 $gold: #C6A652;
 $pollen: #DFA9A9;
 $popsicle: #FF8A00;
@@ -60,6 +58,10 @@ body {
  
  a {
      text-decoration: none;
+ }
+
+ hr {
+    opacity: 1;
  }
  
  .title {
