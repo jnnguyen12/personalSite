@@ -16,7 +16,7 @@
 .button-tab {
     cursor: pointer;
     padding: 0.8em 1.7em;
-    background: linear-gradient($charcoal, $charcoal) no-repeat;
+    background: linear-gradient($light-slate, $light-slate) no-repeat;
     background-position: left bottom;
     background-size: 0%;
     border-radius: $radius;
@@ -51,7 +51,7 @@
     &:hover:not(.selected) {
         background-size: 100%;
         color: $background !important;
-        border-color: $charcoal;
+        border-color: $light-slate;
         // @extend .neo-small;
 
         & > * {

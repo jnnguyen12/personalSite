@@ -23,113 +23,10 @@ svg {
     z-index: -1;
 }
 
-// fa-icon.social {
-//     color: $teal;
-//     transition: all 0.2s;
-//     background: linear-gradient(to top, transparent, $air-blue) no-repeat;
-//     background-size: 100% 2px;
-//     background-position: left bottom;
-//     padding: 5px;
-//     padding-bottom: 0px;
-//     margin-bottom: 5px;
-//     display: block;
-//     margin-right: 0.5em;
-// }
-
-// fa-icon.chevron {
-//     color: transparent;
-//     // transform: translateX(-0.5em);
-//     margin-left: 0.5em;
-//     transition: 0.2s;
-// }
-
 .svg-inline--fa {
     height: 1.2em !important;
 }
 
-// .social-list {
-//     margin: 35px auto;
-//     padding: 35px;
-//     border-radius: 25px;
-//     background-color: $warm-snow;
-//     li a {
-//         display: flex;
-//         align-items: center;
-//         color: $slate;
-//         transition: all 0.2s;
-//         width: fit-content;
-        
-//         &:hover {
-//             color: $teal;
-//             .social {
-//                 border-radius: 10px;
-//                 padding: 5px;
-//                 margin-bottom: 0px;
-//                 background: linear-gradient(to top, $teal, $teal) no-repeat;
-//                 background-size: 100% 100%;
-//                 color: white;
-//                 transform: rotate(10deg) !important;
-//             }
-
-//             fa-icon.chevron {
-//                 color: $teal;
-//                 transform: translateX(1em);
-//             }
-//         }
-//     }
-
-//     li:nth-child(even) a:hover > fa-icon.social {
-//         transform: rotate(-10deg) !important;
-//     }
-// }
-
-// .email {
-//     position: relative;
-//     width: 56px;
-//     display: flex;
-//     justify-content: center;
-
-//     div {
-//         position: relative;
-//         color: $air-blue;
-//         margin: 0 auto;
-//         z-index: 1;
-//     }
-
-//     svg {
-//         position: absolute;
-//         width: 100%;
-//         left: 0;
-//         right: 0;
-//         z-index: 0;
-//         transform: translateY(-25%);
-//         transition: all 0.2s ease;
-//         path {
-//             fill: transparent !important;
-//         }
-//     }
-
-//     &:hover {
-//         div {
-//             color: $slate;
-//         }
-//         svg {
-//             transform: rotate(10deg) translateY(-25%);
-//             path {
-//                 fill: $light-sand !important;
-//             }
-//         }
-//     }
-// }
-
-// .download {
-//     color: $rose;
-//     margin-left: 0.5em;
-//     transition: 0.2s;
-//     &:hover {
-//         color: rgba($rose, 0.6);
-//     }
-// }
 
 .marquee {
     position: relative;
@@ -164,12 +61,13 @@ svg {
         position: fixed;
         z-index: 9999;
         left: 0px; right: 0px;
-        background-color: $background;
-        transition: top 0.2s ease;
+        background-color: transparent;
+        transition: top 0.3s ease;
+        backdrop-filter: blur(30px);
 
         .item {
             cursor: pointer;
-            margin: 25px 20px;
+            margin: 25px 20px 0 20px;
             border-radius: $round;
             background-color: transparent;
             transition: all 0.2s ease;
@@ -177,7 +75,7 @@ svg {
             hr {
                 border: 1px solid transparent;
                 width: 0%;
-                margin: 5px 0 0 0;
+                margin: 20px 0 0 0;
                 margin-left: auto;
                 margin-right: auto;
                 border-radius: $round;

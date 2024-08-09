@@ -73,6 +73,4 @@ export class AppComponent {
 
     this.lastScrollTop = scrollTop;
   }
-
-
 }

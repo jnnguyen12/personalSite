@@ -8,6 +8,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ArtListComponent } from './art-list/art-list.component';
 import { ProfListComponent } from './prof-list/prof-list.component';
 import { WorkListComponent } from './work-list/work-list.component';
+import { AboutMeComponent } from './about-me/about-me.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { WorkListComponent } from './work-list/work-list.component';
     ProjectListComponent,
     ArtListComponent,
     ProfListComponent,
-    WorkListComponent
+    WorkListComponent,
+    AboutMeComponent
   ],
   imports: [
     BrowserModule,
