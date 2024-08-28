@@ -1,1 +1,92 @@
-<p>about-me works!</p>
+<div class="container padbig d-flex justify-content-between">
+    
+
+    <!-- about me -->
+    <div class="col-lg-7">
+        <div class="about-box">
+            <h1 class="title display-4 peach">
+                About me
+            </h1>
+            <h5>I'm a Software Developer with a Computer Science degree from Iowa State, blending my love for fine arts, tech, and design into every project. </h5>
+            <h5>I started as a prize-winning artist with a passion for architecture but found my way into coding through gaming and a curiosity for the IT world. </h5>
+            <h5>Outside of work, you'll find me painting, reading, or diving into new hobbies. </h5>
+        </div>
+    </div>
+
+    <!-- links and proficencies -->
+    <div class="col-lg-4 d-flex flex-column scroller">
+        <div class="social-links">
+            <div class="row">
+                <a href="https://github.com/jnnguyen12" class="social-link">
+                    <div class="d-flex justify-content-between align-items-end">
+                        <h1 class="title display-5">My Github</h1>
+                        <div class="icons d-flex flex-column align-items-center">
+                            <fa-icon [icon]="faArrow" size="lg" class="first" />
+                            <fa-icon [icon]="faGithub" size="lg" class="snd" />
+                        </div>
+                    </div>
+                    <hr>
+                </a>
+            </div>
+            <div class="row">
+                <a href="https://www.behance.net/joannenguyen2" class="social-link">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h1 class="title display-5">My Behance</h1>
+                        <div class="icons d-flex flex-column overflow-hidden align-items-center">
+                            <fa-icon [icon]="faArrow" size="lg" class="first" />
+                            <fa-icon [icon]="faBehance" size="lg" class="snd" />
+                        </div>
+                    </div>
+                    <hr>
+                </a>
+            </div>
+            <div class="row">
+                <a href="https://www.linkedin.com/in/joannenguyen1212" class="social-link">
+                    <div class="d-flex justify-content-between align-items-end">
+                        <h1 class="title display-5">My LinkedIn</h1>
+                        <div class="icons d-flex flex-column overflow-hidden align-items-center">
+                            <fa-icon [icon]="faArrow" size="lg" class="first" />
+                            <fa-icon [icon]="faLinkedin" size="lg" class="snd" />
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!-- caret -->
+            <!-- <div class="d-flex justify-content-center">
+                <fa-icon [icon]="faCaret" class="caret"/>
+            </div> -->
+        </div>
+
+
+         <!-- Proficiencies -->
+          <div class="profs d-none">
+            <h1 class="title display-4 light-slate">Proficiencies</h1>
+
+            <!-- Progress bar-->
+
+             <!-- List-->
+            <h5 class="title">
+                Programming languages
+            </h5>
+            <div class="pill" *ngFor="let pill of langs">
+                {{ pill }}
+            </div>
+
+            <h5 class="title">
+                Frameworks
+            </h5>
+            <div class="pill" *ngFor="let pill of frameworks">
+                {{ pill }}
+            </div>
+
+            <h5 class="title">
+                Applications and tools
+            </h5>
+            <div class="pill" *ngFor="let pill of tools">
+                {{ pill }}
+            </div>
+
+
+          </div>
+    </div>
+</div>>

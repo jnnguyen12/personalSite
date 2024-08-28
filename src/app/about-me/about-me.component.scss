@@ -1,0 +1,103 @@
+@import '../../styles.scss';
+
+
+.social-link {
+    color: $concrete;
+
+    h1 {
+        color: currentColor;
+        padding-bottom: 0;
+        transition: all 0.3s ease;
+    }
+
+    // the icons
+    fa-icon {
+        font-size: 2.3em;
+        color: currentColor;
+        transition: all 0.3s ease;
+
+        // the arrows
+        &:has(~ fa-icon)
+        {
+            margin-left: 5px;
+            font-size: 2.5em;
+            rotate: -45deg;
+            margin-bottom: 5px;
+        }
+    }
+
+    hr {
+        border: 1px solid $light-concrete;
+        border-bottom: none;
+        border-radius: $round;
+        margin-bottom: 3em;
+    }
+
+    .icons {
+        height: 3.6em;
+        width: 4em;
+        padding: 0 10px;
+        // border: 1px solid red;
+        overflow: hidden;
+        margin-bottom: 5px;
+    }
+
+    &:hover {
+        color: $popsicle;
+
+        fa-icon {
+            transform: translateY(-1.7em);
+
+            &:has(~ fa-icon) {
+                transform: translate(1.2em, -1.2em);
+            }
+        }
+    }
+}
+
+.caret {
+    font-size: 3em;
+}
+
+.profs {
+
+    h5.title {
+        color: $peach;
+        margin: 1em 0 0 0;
+    }
+    
+    .pill {
+        padding: 8px 15px;
+        background-color: transparent;
+        border-radius: $small-radius;
+        display: inline-flex;
+        color: $light-slate;
+        width: fit-content;
+        margin-bottom: 10px;
+        border: 1px solid $light-slate;
+        min-width: 20px;
+        
+    
+        &:has(~ .pill) {
+            margin-right: 10px;
+        }
+    }
+    
+}
+
+.about-box {
+    border-radius: $large-radius;
+    background-color: $background-2;
+    padding: 4rem 3rem 3rem 3rem;
+    box-shadow: -20px 20px 0px $concrete;
+    position: relative;
+
+    *:has(+ *){
+        padding-bottom: 1.5rem;
+    }
+
+    h1 {
+        position: absolute;
+        top: -1.5rem;
+    }
+}

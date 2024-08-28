@@ -1,6 +1,5 @@
 import { Component, HostListener } from '@angular/core';
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
-import { faLinkedinIn, faBehance, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faWrench, faChevronRight, faEnvelope, faDownload, faHouse, faUser, faTerminal, faPalette, faSuitcase } from '@fortawesome/free-solid-svg-icons';
 import { Project } from './interfaces/interfaces';
 import * as _projects from '../assets/jsons/projects.json';

@@ -27,5 +27,21 @@ export const workExperiences: WorkExperience[] = [
         desc: `• Re-designed and reprogrammed an interactive user-experience project on a 7680x3240 touch-screen display for academic and entertainment purposes for Iowa State's Engineering department using Intuiface.\n
                • Redesigned the UX/UI with user accessibility kept in mind due to the size and height of the project.\n
                • Collaborated with adjacent departments and personnel for content propagation and interviews.`
+    },
+    {
+        company: "Whirlybird's at State Gym",
+        role: "Supervisor",
+        dateFrom: "Aug 2021",
+        dateTo: "Feb 2023",
+        desc: `• Supervised multiple teams of 3 to make protein drinks and handled customer correspondence under a high-pressure and fast-paced environment.\n
+               • Took responsibility for ensuring well-stocked inventory and up-to-standard sanitization and food safety.`
+    },
+    {
+        company: "Des Moines Area Community College Tech Support",
+        role: "Tech Support Helpdesk Agent",
+        dateFrom: "Oct 2019",
+        dateTo: "Aug 2020",
+        desc: `• Assisted in solving technical issues for DMACC's faculty and students, revolving account recovery and permissions, using Banner, Active Directory, and other networking applications via tickets and calls.\n
+               • Participated in troubleshooting devices, on-site and remote, while practicing excellence in customer service.`
     }
 ];

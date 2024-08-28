@@ -48,7 +48,7 @@
 
     .background {
         transition: all 0.3s ease;
-        border-radius: 20px;
+        border-radius: $small-radius;
         width: 0px; height: 0px;
         position: absolute;
         margin: auto;
@@ -133,7 +133,7 @@
 
     .pill-btn {
         padding: 5px 15px;
-        border-radius: $radius;
+        border-radius: $small-radius;
         background-color: $chopstick;
         border: 2px solid $chopstick;
         color: $background;
@@ -149,5 +149,16 @@
             border: 2px solid $popsicle;
             color: $popsicle;
         }
+    }
+}
+
+.dark-box {
+    border-radius: $small-radius;
+    background-color: $slate;
+    padding: 3em;
+    box-shadow: -20px 20px 0px $peach;
+
+    & * {
+        color: $background;
     }
 }

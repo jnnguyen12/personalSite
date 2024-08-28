@@ -58,133 +58,72 @@ svg {
 * sections
 **/
 .float-nav {
-        position: fixed;
-        z-index: 9999;
-        left: 0px; right: 0px;
+    position: fixed;
+    z-index: 9999;
+    left: 0px; right: 0px;
+    background-color: transparent;
+    transition: top 0.3s ease;
+    backdrop-filter: blur(30px);
+
+    .item {
+        cursor: pointer;
+        margin: 25px 20px 0 20px;
         background-color: transparent;
-        transition: top 0.3s ease;
-        backdrop-filter: blur(30px);
+        transition: all 0.2s ease;
+        color: $light-slate;
+        font-family: 'Poppins';
+        font-weight: 500;
+        font-size: 18px;
 
-        .item {
-            cursor: pointer;
-            margin: 25px 20px 0 20px;
-            border-radius: $round;
-            background-color: transparent;
+        p {
             transition: all 0.2s ease;
-
-            hr {
-                border: 1px solid transparent;
-                width: 0%;
-                margin: 20px 0 0 0;
-                margin-left: auto;
-                margin-right: auto;
-                border-radius: $round;
-                transition: all 0.2s ease;
-            }
-
-            a {
-                color: $light-slate;
-                font-family: 'Poppins';
-                font-weight: 500;
-                transition: all 0.2s ease;
-                display: block;
-                font-size: 18px;
-            }
-
-            &:hover {
-                a {
-                    color: $peach;
-                    transform: translateY(-3px);
-                }
-
-                hr {
-                    border: 1px solid $peach;
-                    width: 100%;
-                }
-            }
         }
 
-        .last-item {
-            a {
-                color: $peach;
+        hr {
+            border: 1px solid transparent;
+            width: 0%;
+            margin: 20px 0 0 0;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: $round;
+            transition: all 0.2s ease;
+        }
+
+        &:hover {
+            color: $peach;
+
+            p {
+                transform: translateY(-3px);
             }
-            
+
             hr {
-                color: $peach;
-            }
-
-            &:hover {
-                a {
-                    color: $popsicle;
-                    transform: tranpopsicleY(-3px);
-                }
-
-                hr {
-                    border: 1px solid $popsicle;
-                    width: 100%;
-                }
+                border: 1px solid $peach;
+                width: 100%;
             }
         }
+    }
+
+    .last-item {
+        color: $peach;
+        
+        hr {
+            color: $peach;
+        }
+
+        &:hover {
+            color: $popsicle;
+
+            hr {
+                border: 1px solid $popsicle;
+                width: 100%;
+            }
+        }
+    }
 }
 
 .disclaimer {
     margin-top: 75px;
 }
-
-// .float-nav {
-//     position: fixed;
-//     z-index: 9999;
-//     top: 30px;
-//     left: 20px;
-//     padding: 15px 25px;
-//     border-radius: $round;
-//     width: 50px;
-//     background-color: $background;
-//     box-shadow: 0px 5px 10px rgba(gray, 0.45);
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-
-//     .float-icons {
-//         cursor: pointer;
-//         position: relative;
-//         padding: 10px 15px;
-//         transition: all 0.2s ease;
-//         a {
-//             color: $slate !important;
-//         }
-
-//         .circle {
-//             transition: all 0.2s ease;
-//             border-radius: 100%;
-//             width: 0px; height: 0px;
-//             position: absolute;
-//             margin: auto;
-//             top: 0; left: 0; bottom: 0; right: 0;
-//             background-color: $slate;
-//         }
-
-//         .ng-fa-icon {
-//             position: relative;
-//             z-index: 3 !important;
-//         }
-
-//         &:hover {
-//             a {
-//                 color: $background !important;
-//             }
-
-//             .circle {
-//                 width: 40px; height: 40px;
-//                 z-index: 1;
-//             }
-//         }
-//     }
-
-//     .float-icons:has(~ .float-icons) {
-//         margin-bottom: 10px;
-//     }
-// }
 
 .intro {
     display: flex;

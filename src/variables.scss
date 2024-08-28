@@ -1,8 +1,10 @@
 $slate: #151E2E;
 $light-slate: #393F49;
 $background: #DBD8D5;
+$background-2: #D9D1C9;
 $snow: #EFF2F9;
 $concrete: #7A8290;
+$light-concrete: #8C9099;
 $gold: #C6A652;
 $pollen: #DFA9A9;
 $popsicle: #D6682E;
@@ -10,21 +12,45 @@ $peach: #C08261;
 $chopstick: #9A3B3B;
 $shadow: #BAB8B5;
 /*-------------------------*/
-$radius: 60px;
+$small-radius: 20px;
+$large-radius: 30px;
 $round: 200px;
 
 /**
 * global styles
 */
 
+@font-face {
+    font-family: Satoshi;
+    src: url(assets/font/Satoshi-Bold.otf) format("opentype");
+    font-weight: 600;
+}
+@font-face {
+    font-family: Satoshi;
+    src: url(assets/font/Satoshi-Medium.otf) format("opentype");
+    font-weight: 500;
+}
+@font-face {
+    font-family: SatoshiRegular;
+    src: url(assets/font/Satoshi-Regular.otf) format("opentype");
+    font-weight: 400;
+}
+@font-face {
+    font-family: SatoshiLight;
+    src: url(assets/font/Satoshi-Light.otf) format("opentype");
+    font-weight: 300;
+}
+
 #home, #about, #artworks, #proficiencies, #programming, #work {
     scroll-snap-align: start;
+    scroll-snap-type: y mandatory;
 }
 
 body {
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Satoshi', sans-serif;
     background-color: $background;
-    color: $slate !important;
+    color: $light-slate !important;
+    font-weight: 300;
     overflow-x: hidden;
 }
 
@@ -123,6 +149,14 @@ body {
 */
 .popsicle {
     color: $popsicle;
+}
+
+.peach {
+    color: $peach !important;
+}
+
+.light-slate {
+    color: $light-slate;
 }
 
 /*

@@ -19,7 +19,7 @@
     background: linear-gradient($light-slate, $light-slate) no-repeat;
     background-position: left bottom;
     background-size: 0%;
-    border-radius: $radius;
+    border-radius: $small-radius;
     border: 3px solid rgba($slate, 0.5);
     margin-bottom: 18px;
     width: fit-content;
@@ -69,7 +69,7 @@ h6 {
 .pill {
     padding: 10px 20px;
     background-color: $slate;
-    border-radius: $radius;
+    border-radius: $small-radius;
     display: inline-flex;
     color: $background;
     width: fit-content;

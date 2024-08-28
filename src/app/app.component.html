@@ -26,12 +26,11 @@
         </a>
 
         <div class="d-flex justify-content-center align-items-center" >
-          <div class="item" [ngClass]="{'last-item': last}" *ngFor="let link of navlinks; let last = last">
-            <a [href]="'#' + link.section">
-              {{ link.name }}
-            </a>
-            <hr />
-          </div>
+          <a [href]="'#' + link.section" class="item" 
+            [ngClass]="{'last-item': last}" *ngFor="let link of navlinks; let last = last">
+              <p>{{ link.name }}</p>
+              <hr />
+          </a>
         </div>
       </div>
     </div>
@@ -76,39 +75,23 @@
               </div>
             </div>
           </div>
-        </div>
-        <div
-          class="container d-flex flex-column justify-content-center mx-auto" id="about">
-          <div class="about lh-lg">
-            <h2 class="title text-start">About me</h2>
-            <p>
-              My name is Thu 'Joanne' Nguyen, I am a recent Computer Science grad from Iowa State University. I was an international student, and I am interested in various fields combining art, design, UX/UI and front-end to full-stack programming, from web development to game design.
-            </p>
-            <p>
-              This is my portfolio website, with necessary links lead to my past projects, academic and professional experiences.
-            </p>
-            <p>
-                In my free time, I like to paint, read, and play games. I also like to pick up a million hobbies that I end up never finishing, or cook abominable dishes :)
-              </p>
-          <!-- </div> -->
-        </div>
           <!-- <div class="row d-flex justify-content-center">
           </div> -->
         </div>
       </div>
     </div>
 
+    <!-- about me -->
+    <app-about-me id="about"></app-about-me>
+
+    <!--work experiences-->
+    <app-work-list id="work"></app-work-list>
+
     <!-- programming projects -->
     <app-project-list id="programming"></app-project-list>
       
       <!-- art projects -->
     <app-art-list id="artworks"></app-art-list>
-
-    <!-- proficiencies -->
-    <app-prof-list id="proficiencies"></app-prof-list>
-
-    <!--work experiences-->
-    <app-work-list id="work"></app-work-list>
 
 
     <!--reviews-->
