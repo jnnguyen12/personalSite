@@ -133,34 +133,12 @@ svg {
     margin: 0 auto;
 }
 
-.about {
-    margin-top: 4em;
-    background-color: transparent;
-    border: 3px solid rgba($slate, 0.6);
-    border-radius: 20px;
-    padding: 2.5em 3em 2em 3em;
-    position: relative;
-
-    h2 {
-        position: absolute;
-        display: block;
-        padding: 0 1em;
-        background-color: $background;
-        top: -0.5em;
-    }
-}
-    @media (max-width: 480px)
-    {
-        .about {
-            padding: 2em 3em;
-        }
-    }
-
 .me {
     position: relative;
     height: 500px;
     border-radius: $round;
     overflow: hidden;
+    // border: 3px solid $chopstick;
 
     .cover {
         @include bg($background);

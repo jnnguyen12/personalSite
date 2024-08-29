@@ -8,7 +8,9 @@ export interface Project {
     buttonList: {
         type: string,
         link: string
-    }[]
+    }[],
+    skills: string[],
+    platforms: string[]
 }
 
 export interface WorkExperience {
@@ -16,7 +18,9 @@ export interface WorkExperience {
     role: string,
     dateFrom: string,
     dateTo: string,
-    desc: string 
+    desc: string,
+    skills: string[],
+    platforms: string[] 
 }
 
 export interface Proficiency {

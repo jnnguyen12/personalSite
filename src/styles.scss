@@ -73,17 +73,29 @@
         }
 
         
-        & .content *:not(.role) {
-            color: $background !important;
-        }
-        
-        .role {
-            color: $peach !important;
+        & .content
+        {
+            p {
+                color: $background;
+            }
+
+            .title {
+                color: $popsicle !important;
+            }
+
+            .subtitle, .date {
+                color: $background-3 !important;
+            }
         }
 
-        & > .content > .text-muted {
-            opacity: 0.8;
+        & .skill-pill {
+            color: $slate !important;
+            background-color: $background;
         }
+        
+        // & > .content > .text-muted {
+        //     opacity: 0.8;
+        // }
 
         & > .content > *:not(.background) {
             position: relative;
@@ -96,11 +108,6 @@
             background-color: $popsicle;
             border-color: $popsicle;
         }
-
-        & .role {
-            color: rgba($popsicle, 0.8) !important;
-        }
-
     }
 
     &:not(.selected):hover {
@@ -120,6 +127,14 @@
         position: relative;
         padding: 1.8em;
         transition: all 0.4s;
+
+        .title {
+            color: $peach;
+        }
+
+        .subtitle {
+            margin-bottom: 1rem;
+        }
 
         .desc { 
             display: none;
@@ -160,5 +175,20 @@
 
     & * {
         color: $background;
+    }
+}
+
+.skill-pill {
+    padding: 5px 15px;
+    background-color: $slate-2;
+    border-radius: $small-radius;
+    display: inline-flex;
+    color: $snow;
+    width: fit-content;
+    margin-bottom: 10px;
+    font-size: 15px;
+
+    &:has(~ .skill-pill) {
+        margin-right: 10px;
     }
 }

@@ -1,7 +1,9 @@
 $slate: #151E2E;
+$slate-2: #27303C;
 $light-slate: #393F49;
 $background: #DBD8D5;
 $background-2: #D9D1C9;
+$background-3: #C9C4C0;
 $snow: #EFF2F9;
 $concrete: #7A8290;
 $light-concrete: #8C9099;
@@ -140,15 +142,15 @@ body {
     box-shadow: inset 5px 5px 10px $shadow, inset -5px -5px 10px #FCF8F5;
 }
 
-.gold-border {
-    border: 3px solid $popsicle;
-}
-
 /**
 * colors
 */
 .popsicle {
     color: $popsicle;
+}
+
+.chopstick {
+    color: $chopstick;
 }
 
 .peach {

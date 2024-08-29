@@ -16,12 +16,15 @@
                     <div class="background"></div>
                     <div class="d-flex justify-content-between">
                       <div>
-                        <h5 class="title">{{ experience.company }}</h5>
-                        <h6 class="fw-bold role"> {{ experience.role }} </h6>
+                        <h5 class="title">{{ experience.role }}</h5>
+                        <h6 class="fw-bold subtitle"> {{ experience.company }} </h6>
                       </div>
-                        <p class="mb-0 fw-bold text-muted date"> {{ experience.dateFrom }} - {{ experience.dateTo }} </p>
+                      <p class="mb-0 fw-bold text-muted date"> {{ experience.dateFrom }} - {{ experience.dateTo }} </p>
                     </div>
-
+                    <div *ngFor="let skill of experience.skills" class="skill-pill">
+                      {{ skill }}
+                    </div>
+                    
                     <div [ngClass]="showingExperience == experience ? 'desc show' : 'desc'">
                       <div *ngFor="let desc of descriptions">
                         <p>{{ desc }}</p>
