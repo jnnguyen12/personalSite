@@ -6,9 +6,9 @@ export const workExperiences: WorkExperience[] = [
         role: "Software Engineer",
         dateFrom: 'Mar 2024',
         dateTo: "Current",
-        desc: `• Enhanced and reconstructed the UX/UI for Bluetooth pairing screens in a .NET WPF Xamarin project that measures dimensions using a depth camera and performs calculations with machine learning algorithms.\n
-               • Single-handedly redesigned and implemented 70% of new features for a warehouse information and measurement recording app. The app records real-time weight from a BLE scale, uploads data and media, and was developed using Figma and .NET MAUI with the MVVM model.\n
-               • Successfully built and deployed the app to the Playstore, utilizing REST API for data integration, increasing sales.`,
+        desc: `• Designed, developed and deployed 50% of a warehouse product information recording app, with real time BLE Scale weight-recording and photos using .NET MAUI (C# and XAML) on Android and iOS with an ASP.NET server.\n
+               • Assisted with websites and server changes on an Angular project with ASP.NET backend.\n
+               • Successfully built and deployed the app to the AppStore and PlayStore, utilizing REST API for data integration, increasing sales.`,
         skills: [".NET", ".NET Maui", "XML", "C#", "Figma", "Android", "iOS", "Angular", "TypeScript"],
         platforms: ["Android", "iOS", "Web"]
     },

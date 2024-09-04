@@ -59,36 +59,10 @@
     font-size: 3em;
 }
 
-.profs {
-
-    h5.title {
-        color: $peach;
-        margin: 1em 0 0 0;
-    }
-    
-    .pill {
-        padding: 8px 15px;
-        background-color: transparent;
-        border-radius: $small-radius;
-        display: inline-flex;
-        color: $light-slate;
-        width: fit-content;
-        margin-bottom: 10px;
-        border: 1px solid $light-slate;
-        min-width: 20px;
-        
-    
-        &:has(~ .pill) {
-            margin-right: 10px;
-        }
-    }
-    
-}
-
 .about-box {
     border-radius: $large-radius;
     background-color: $background-2;
-    padding: 4rem 3rem 3rem 3rem;
+    padding: 3rem;
     box-shadow: -20px 20px 0px $light-slate;
     position: relative;
 
@@ -98,6 +72,6 @@
 
     h1 {
         position: absolute;
-        top: -1.5rem;
+        top: -3rem;
     }
 }

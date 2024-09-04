@@ -21,7 +21,11 @@ $round: 200px;
 /**
 * global styles
 */
-
+@font-face {
+    font-family: Satoshi;
+    src: url(assets/font/Satoshi-Black.otf) format("opentype");
+    font-weight: 700;
+}
 @font-face {
     font-family: Satoshi;
     src: url(assets/font/Satoshi-Bold.otf) format("opentype");
@@ -33,12 +37,12 @@ $round: 200px;
     font-weight: 500;
 }
 @font-face {
-    font-family: SatoshiRegular;
+    font-family: Satoshi;
     src: url(assets/font/Satoshi-Regular.otf) format("opentype");
     font-weight: 400;
 }
 @font-face {
-    font-family: SatoshiLight;
+    font-family: Satoshi;
     src: url(assets/font/Satoshi-Light.otf) format("opentype");
     font-weight: 300;
 }
@@ -93,11 +97,10 @@ body {
  }
  
  .title {
-     font-family: 'Poppins', serif;
      line-height: 0.9;
      padding-bottom: 1rem;
      color: $popsicle; 
-     font-weight: 600 !important;
+     font-weight: 700 !important;
  
      span {
          line-height: 1.3;
@@ -115,7 +118,6 @@ body {
     background-color: $chopstick;
     color: $snow;
     font-weight: 600;
-    font-family: 'Poppins', sans-serif;
     border: 3px solid transparent;
     box-shadow: 0px 2px 2px rgba($slate, 0.3);
     transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s;
@@ -132,6 +134,10 @@ body {
 
 .neo {
     box-shadow: 20px 20px 60px $shadow, -20px -20px 60px #FCF8F5;
+}
+
+.neo-small-light {
+    box-shadow: 5px 5px 10px $shadow, -5px -5px 10px #F1EDE9;
 }
 
 .neo-small {

@@ -17,9 +17,8 @@
 
     .title {
         padding-bottom: 0.5rem;
-        font-weight: 600;
+        font-weight: 700;
         color: rgba($slate, 0.85);
-        font-family: 'Poppins', sans-serif;
     }
 
 }
@@ -53,7 +52,7 @@
         position: absolute;
         margin: auto;
         top: 0; left: 0; bottom: 0; right: 0;
-        background-color: $slate;
+        @extend .neo-small-light;
     }
 
     .date {
@@ -69,33 +68,7 @@
             width: 100% !important;
             height: 100% !important;
             z-index: 1;
-            @extend .neo-small;
         }
-
-        
-        & .content
-        {
-            p {
-                color: $background;
-            }
-
-            .title {
-                color: $popsicle !important;
-            }
-
-            .subtitle, .date {
-                color: $background-3 !important;
-            }
-        }
-
-        & .skill-pill {
-            color: $slate !important;
-            background-color: $background;
-        }
-        
-        // & > .content > .text-muted {
-        //     opacity: 0.8;
-        // }
 
         & > .content > *:not(.background) {
             position: relative;
@@ -103,10 +76,40 @@
         }
     }
 
-    &.selected{
+    &.selected {
         &::before {
             background-color: $popsicle;
             border-color: $popsicle;
+        }
+
+        .background {
+            background-color: rgba($slate, 0.9);
+            @extend .neo-small;
+        }
+
+        & .content
+        {
+            p {
+                color: white;
+            }
+
+            .title {
+                color: $popsicle !important;
+            }
+
+            .subtitle {
+                color: $background-3 !important;
+            }
+
+            .date {
+                color: $background-3 !important;
+            }
+        }
+
+        & .skill-pill {
+            color: $slate !important;
+            font-weight: 500;
+            background-color: $background;
         }
     }
 
@@ -118,7 +121,7 @@
         }
 
         .background {
-            background-color: rgba($slate, 0.9);
+            background-color: $background-2;
         }
     }
 
@@ -130,10 +133,16 @@
 
         .title {
             color: $peach;
+            font-weight: 600 !important;
         }
 
         .subtitle {
+            font-weight: 500;
             margin-bottom: 1rem;
+        }
+
+        .date {
+            font-weight: 500;
         }
 
         .desc { 
@@ -153,7 +162,6 @@
         border: 2px solid $chopstick;
         color: $background;
         font-weight: 600;
-        font-family: 'Poppins', sans-serif;
     
         &:has(~.pill-btn) {
             margin-right: 10px;

@@ -50,11 +50,10 @@ hr {
 }
 
 .title {
-  font-family: "Poppins", serif;
   line-height: 0.9;
   padding-bottom: 1rem;
   color: #D6682E;
-  font-weight: 600 !important;
+  font-weight: 700 !important;
 }
 .title span {
   line-height: 1.3;

@@ -71,7 +71,6 @@ svg {
         background-color: transparent;
         transition: all 0.2s ease;
         color: $light-slate;
-        font-family: 'Poppins';
         font-weight: 500;
         font-size: 18px;
 
@@ -178,42 +177,11 @@ svg {
     }
 }
 
-.skill-branch::before {
-    content: ' ';
-    position: absolute;
-    left: 0px;
-    background: rgba($slate, 0.6);
-    height: 100%;
-    width: 3px;
-}
-
-.skill-card {
-    border-radius: 0px;
-    margin: 15px;
-    border: none;
-    border-bottom: 3px solid rgba($slate, 0.6);
-    background-color: rgba(white, 0);
-
-    .card-title {
-        // color: $dark-clay;
-    }
-}
-
-// $badge-color: $blue;
-// .badge {
-//     --bs-badge-font-size: 1em;
-//     --bs-badge-padding-y: 1em;
-//     --bs-badge-padding-x: 1em;
-// }
-
-
 @media (max-width: 969px) {
     body {
         scroll-snap-type: y proximity;
     }
-
     
-
     .float-nav {
         top: 10px;
         // border-radius: 0;

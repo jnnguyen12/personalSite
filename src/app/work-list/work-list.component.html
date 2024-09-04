@@ -17,9 +17,9 @@
                     <div class="d-flex justify-content-between">
                       <div>
                         <h5 class="title">{{ experience.role }}</h5>
-                        <h6 class="fw-bold subtitle"> {{ experience.company }} </h6>
+                        <h6 class="subtitle"> {{ experience.company }} </h6>
                       </div>
-                      <p class="mb-0 fw-bold text-muted date"> {{ experience.dateFrom }} - {{ experience.dateTo }} </p>
+                      <p class="mb-0 date"> {{ experience.dateFrom }} - {{ experience.dateTo }} </p>
                     </div>
                     <div *ngFor="let skill of experience.skills" class="skill-pill">
                       {{ skill }}

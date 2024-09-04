@@ -1,15 +1,15 @@
 <div class="padbig container prog">
     <div class="row d-flex align-items-center">
-      <div class="col-lg-5 col-xl-6 mb-4 mb-lg-0">
+      <div class="col-lg-4 col-xl-5 mb-4 mb-lg-0">
         <div class="display-4 title row">
           <div class="mb-3 opacity-75">/*</div>
           <span class="mb-3 ms-3">Programming Projects</span>
           <div class="mb-4 opacity-75">*/</div>
         </div>
-        <p>Below are a few notable projects I have worked on, for educational purposes and entertainment purposes. Click on the projects so see more!</p>
+        <p>Here are a few notable projects I have worked on, for educational purposes and entertainment purposes. Click on the projects so see more!</p>
         <a type="button" href="https://github.com/jnnguyen12/" target="_blank" class="btn big-btn mt-4">My Github</a>
       </div>
-      <div class="col-lg-7 col-xl-6 h-100">
+      <div class="col-lg-8 col-xl-7 h-100">
         <div class="tree-wrapper h-100">
             <div *ngFor="let project of projects" [ngClass]="showingProject == project ? 'tree-item selected' : 'tree-item'" (click)="selectProject(project)">
                 <div class="content">
@@ -17,9 +17,9 @@
                     <div class="d-flex justify-content-between">
                       <div>
                         <h5 class="title mb-0">{{ project.name }}</h5>
-                        <h6 class="fw-bold subtitle"> {{ project.place }} </h6>
+                        <h6 class="subtitle"> {{ project.place }} </h6>
                       </div>
-                      <p class="text-muted fw-bold date"> {{ project.date }} </p>
+                      <p class="date"> {{ project.date }} </p>
                     </div>
 
                     <div *ngFor="let skill of project.skills" class="skill-pill">
