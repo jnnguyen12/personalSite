@@ -96,7 +96,7 @@ svg {
             }
 
             hr {
-                border: 1px solid $peach;
+                border: 1px solid currentColor;
                 width: 100%;
             }
         }
@@ -113,7 +113,7 @@ svg {
             color: $popsicle;
 
             hr {
-                border: 1px solid $popsicle;
+                border: 1px solid currentColor;
                 width: 100%;
             }
         }

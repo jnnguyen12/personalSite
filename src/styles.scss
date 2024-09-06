@@ -200,3 +200,15 @@
         margin-right: 10px;
     }
 }
+
+// animations
+.fade-up {
+    opacity: 0;
+    transform: translateY(3rem);
+    transition: all 0.3s ease-out;
+
+    &.fade-in {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

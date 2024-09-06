@@ -49,7 +49,6 @@ export class AppComponent {
     if (this.navbar) {
       if (scrollTop > this.lastScrollTop) {
         navBarStyle.top = `-${this.navbarHeight}px`;
-        console.log(navBarStyle.top);
       } else {
         navBarStyle.top = '0';
       }
