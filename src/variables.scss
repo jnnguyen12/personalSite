@@ -63,13 +63,17 @@ body {
 .padbig {
     display: flex;
     align-items: center;
-    padding-top: 18vh;
+    padding-top: 20vh;
+ }
+
+ .padbig-bottom {
+    padding-bottom: 20vh;
  }
 
  .margbig {
     display: flex;
     align-items: center;
-    margin-top: 18vh;
+    margin-top: 20vh;
  }
 
  .padsmall {
