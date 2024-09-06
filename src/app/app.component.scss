@@ -121,7 +121,10 @@ svg {
 }
 
 .disclaimer {
-    margin-top: 75px;
+    border-top: 1px solid $peach;
+    padding: 1rem;
+    margin: 0;
+    color: $peach;
 }
 
 .intro {
