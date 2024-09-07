@@ -1,7 +1,7 @@
 <div class="margbig container prog">
-        <div class="row d-flex align-items-center g-5">
+        <div class="row d-flex align-items-center">
           <!-- left column -->
-          <div class="col-lg-4 col-xl-5 mb-4 mb-lg-0 fade-up" appScrollAnimation animationStartHeight="0.8" animationClass="fade-in">
+          <div class="col-lg-4 col-xl-5 mb-4 mb-lg-0 mx-auto px-3 px-md-0 fade-up" appScrollAnimation animationStartHeight="0.8" animationClass="fade-in">
             <div class="display-2 text-lowercase title row">
               <div class="mb-3 opacity-75">/*</div>
               <span class="mb-3 ms-3">Work Experiences</span>
@@ -18,12 +18,12 @@
               (click)="selectExperience(experience)">
                 <div class="content">
                     <div class="background"></div>
-                    <div class="d-flex justify-content-between">
-                      <div>
+                    <div class="row">
+                      <div class="col-md-auto col-12">
                         <h5 class="title">{{ experience.role }}</h5>
                         <h6 class="subtitle"> {{ experience.company }} </h6>
                       </div>
-                      <p class="mb-0 date"> {{ experience.dateFrom }} - {{ experience.dateTo }} </p>
+                      <p class="date col-md-auto col-12"> {{ experience.dateFrom }} - {{ experience.dateTo }} </p>
                     </div>
                     <div *ngFor="let skill of experience.skills" class="skill-pill">
                       {{ skill }}

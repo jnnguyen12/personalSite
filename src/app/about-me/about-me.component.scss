@@ -62,7 +62,7 @@
 .about-box {
     border-radius: $large-radius;
     background-color: $background-2;
-    padding: 3rem;
+    padding: 3em;
     box-shadow: -20px 20px 0px $light-slate;
     position: relative;
 
@@ -72,6 +72,11 @@
 
     h1 {
         position: absolute;
-        top: -3.3rem;
+        top: -0.8em;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .about-box h1 {
     }
 }
