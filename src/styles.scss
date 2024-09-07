@@ -211,4 +211,19 @@
         opacity: 1;
         transform: translateY(0);
     }
+
+    &.longer {
+        transition: all 0.5s ease-out;
+    }
+}
+
+.fade-left {
+    opacity: 0;
+    transform: translateX(3rem);
+    transition: all 0.3s ease-out;
+
+    &.fade-in {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }

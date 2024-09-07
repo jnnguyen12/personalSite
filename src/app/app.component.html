@@ -45,15 +45,17 @@
 
     <!--intro-->
     <div class="container-fluid padbig" id="home">
-      <div class="col mx-auto fade-up" appScrollAnimation animationClass="fade-in">
+      <div class="col mx-auto">
         <div class="container row intro">
           <div
             class="col-sm-7 col-md-7 mx-auto mx-md-0 mb-3 mb-md-0"
             style="z-index: 1"
           >
-            <h4 class="lh-1">Hi! I am</h4>
-            <h1 class="display-1 title text-start py-2">Joanne Nguyen</h1>
-            <h4 class="">
+            <h4 class="lh-1 fade-up" appScrollAnimation animationClass="fade-in">Hi! I am</h4>
+            <h1 class="display-1 title text-start py-2 fade-up" appScrollAnimation animationDelay="0.2s" animationClass="fade-in">
+              Joanne Nguyen
+            </h1>
+            <h4 class="fade-up" appScrollAnimation animationDelay="0.4s" animationClass="fade-in">
               I am a
               <!-- <div class="pollen marquee">
                 <div>
@@ -71,8 +73,7 @@
             </h4>
           </div>
           <div
-            class="col-sm-4 col-lg-3 col-md-4 mx-auto mx-md-0 position-relative"
-          >
+            class="col-sm-4 col-lg-3 col-md-4 mx-auto mx-md-0 position-relative fade-left" appScrollAnimation animationDelay="0.6s" animationClass="fade-in">
             <div class="me neo">
               <div class="cover">
                 <img src="assets/me.JPG" alt="joanne :)" />
@@ -103,7 +104,7 @@
     <!--contact me-->
     <div class="padbig padbig-bottom container d-flex justify-content-center flex-column" id="contact">
       <!-- #mail-->
-      <a href="mailto:joanne.nguyen.1212@gmail.com" class="col-lg-7 col-10">
+      <a href="mailto:joanne.nguyen.1212@gmail.com" class="col-lg-7 col-10 fade-up" appScrollAnimation animationDelay="0.5s" animationStartHeight="0.8" animationClass="fade-in">
         <div class="contact-me-btn .btn ">
           <h1 class="display-4 text-center">
             contact me!
@@ -112,13 +113,13 @@
       </a>
 
       <div class="d-flex social-section mt-3 col-xl-2 col-md-4 col-5 justify-content-between">
-          <a href="https://github.com/jnnguyen12">
+          <a href="https://github.com/jnnguyen12" class="fade-up" appScrollAnimation animationStartHeight="0.85" animationClass="fade-in">
             <fa-icon [icon]="faGithub" size="lg"></fa-icon>
           </a>
-          <a href="https://www.behance.net/joannenguyen2">
+          <a href="https://www.behance.net/joannenguyen2" class="fade-up" appScrollAnimation animationDelay="0.1s" animationStartHeight="0.85" animationClass="fade-in">
             <fa-icon [icon]="faBehance" size="lg"></fa-icon>
           </a>
-          <a href="https://www.linkedin.com/in/joannenguyen1212">
+          <a href="https://www.linkedin.com/in/joannenguyen1212" class="fade-up" appScrollAnimation animationDelay="0.2s" animationStartHeight="0.85" animationClass="fade-in">
             <fa-icon [icon]="faLinkedin" size="lg"></fa-icon>
 
           </a>

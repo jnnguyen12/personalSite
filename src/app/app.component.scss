@@ -61,7 +61,7 @@ svg {
     position: fixed;
     z-index: 9999;
     left: 0px; right: 0px;
-    background-color: transparent;
+    background-color: rgba($background, 0.5);
     transition: top 0.3s ease;
     backdrop-filter: blur(30px);
 
