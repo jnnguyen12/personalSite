@@ -6,7 +6,7 @@ import { Directive, ElementRef, HostListener, Input, Renderer2 } from '@angular/
 export class ScrollAnimationDirective {
   @Input() animationClass: string = 'fade-up';
   @Input() animationDelay: string = '0s';
-  @Input() animationStartHeight: string = '0.65';
+  @Input() animationStartHeight: string = '0.7';
   private isVisible = false;
 
   constructor(private el: ElementRef, private renderer: Renderer2) { }

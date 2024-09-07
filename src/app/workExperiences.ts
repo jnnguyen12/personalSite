@@ -6,9 +6,9 @@ export const workExperiences: WorkExperience[] = [
         role: "Software Engineer",
         dateFrom: 'Mar 2024',
         dateTo: "Current",
-        desc: `• Designed, developed and deployed 50% of a warehouse product information recording app, with real time BLE Scale weight-recording and photos using .NET MAUI (C# and XAML) on Android and iOS with an ASP.NET server.\n
-               • Assisted with websites and server changes on an Angular project with ASP.NET backend.\n
-               • Successfully built and deployed the app to the AppStore and PlayStore, utilizing REST API for data integration, increasing sales.`,
+        desc: `• Designed, developed and deployed 50% of a warehouse product information recording app, with real time BLE Scale weight-recording and ZXing barcode scanning using .NET MAUI (C# and XAML) on Android and iOS with an ASP.NET server.\n
+               • Assisted with website and server updates on an Angular project with ASP.NET backend.\n
+               • Successfully built and deployed the app to the Playstore and Appstore, utilizing REST API for data integration, created a headliner for revenue.`,
         skills: [".NET", ".NET Maui", "XML", "C#", "Figma", "Android", "iOS", "Angular", "TypeScript"],
         platforms: ["Android", "iOS", "Web"]
     },
@@ -17,9 +17,9 @@ export const workExperiences: WorkExperience[] = [
         role: "Software Development Intern",
         dateFrom: 'May 2023',
         dateTo: 'Dec 2023',
-        desc: `• Lead Front-End Web Developer in a team of four using HTML, CSS, and Bootstrap in .NET Core to re-design a multi-site of 7 company products, along with a hotel kiosk and Wi-Fi splash screen system with Umbraco CMS.\n
-               • Took front-end developer role in a web application display for clients' network latency management probes in Angular and TypeScript, using Jest for writing tests.\n
-               • Designed all UX/UI and assisted with all UX/UI decisions, across all company products and front-facing sites.`,
+        desc: `• Lead Front-End Web Developer in a team of four using HTML, CSS, and Bootstrap in ASP.NET to re-design a multi-site of 7 company products, along with a hotel kiosk and Wi-Fi splash screen system with Umbraco CMS. \n
+               • Took front-end developer role in a web application display for clients' network latency management probes in Angular and TypeScript, using Jest for writing tests. \n
+               • Designed and assisted with all UX/UI decisions, across all company products and front-facing sites.`,
         skills: ["Umbraco CMS", "HTML", "Angular", "CSS", "Bootstrap", "ASP.NET"],
         platforms: ["Web"]
     },
@@ -28,9 +28,8 @@ export const workExperiences: WorkExperience[] = [
         role: "Student Software Developer",
         dateFrom: 'Jan 2023',
         dateTo: 'May 2023',
-        desc: `• Re-designed and reprogrammed an interactive user-experience project on a 7680x3240 touch-screen display for academic and entertainment purposes for Iowa State's Engineering department using Intuiface.\n
-               • Redesigned the UX/UI with user accessibility kept in mind due to the size and height of the project.\n
-               • Collaborated with adjacent departments and personnel for content propagation and interviews.`,
+        desc: `• Re-designed and reprogrammed a 7-year-old interactive user-experience project on a 7680x3240 touch-screen display for Iowa State's Engineering department using Intuiface, with academic and entertainment purposes. \n
+               • Collaborated with adjacent departments and personnel for content propagation and interviews, and user accessibility kept in mind due to the size of the project`,
         skills: ["Intuiface", "Figma", "WordPress"],
         platforms: ["Windows"]
     },

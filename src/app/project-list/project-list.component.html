@@ -6,11 +6,13 @@
           <span class="mb-3 ms-3">Programming Projects</span>
           <div class="mb-4 opacity-75">*/</div>
         </div>
-        <p class="fade-up" appScrollAnimation animationDelay="0.1s" animationStartHeight="0.9" animationClass="fade-in">
+        <h5 class="fade-up fw-normal mx-3" appScrollAnimation animationDelay="0.1s" animationStartHeight="0.9" animationClass="fade-in">
           Here are a few notable projects I have worked on, for educational purposes and entertainment purposes. Click on the projects so see more!
-        </p>
-        <a type="button" href="https://github.com/jnnguyen12/" target="_blank" 
-           class="btn outline big-btn mt-4 fade-up" appScrollAnimation animationDelay="0.3s" animationStartHeight="0.9" animationClass="fade-in">My Github</a>
+        </h5>
+        <div class="fade-up" appScrollAnimation animationDelay="0.3s" animationStartHeight="0.9" animationClass="fade-in">
+          <a type="button" href="https://github.com/jnnguyen12/" target="_blank" 
+             class="btn outline big-btn mx-2 mt-4">My Github</a>
+        </div>
       </div>
       <div class="col-lg-8 col-xl-7 h-100">
         <div class="tree-wrapper h-100">
@@ -21,11 +23,11 @@
                 <div class="content">
                     <div class="background"></div>
                     <div class="d-flex justify-content-between row">
-                      <div>
-                        <h5 class="title mb-0 col-md-auto col-12">{{ project.name }}</h5>
-                        <h6 class="subtitle col-md-auto col-12"> {{ project.place }} </h6>
+                      <div class="col-md-auto col-12">
+                        <h5 class="title mb-0">{{ project.name }}</h5>
+                        <h6 class="subtitle"> {{ project.place }} </h6>
                       </div>
-                      <p class="date"> {{ project.date }} </p>
+                      <p class="date col-md-auto col-12"> {{ project.date }} </p>
                     </div>
 
                     <div *ngFor="let skill of project.skills" class="skill-pill">
