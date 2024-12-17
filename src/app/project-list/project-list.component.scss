@@ -6,3 +6,21 @@
     }
 }
 
+.hover-img {
+  position: fixed;
+  width: auto;
+  pointer-events: none;
+  z-index: 1000;
+  height: 300px;
+  border-radius: 25px;
+  overflow: hidden;
+  border: 1px solid $gold;
+  opacity: 95%;
+  transition: all 0.25s ease-out;
+
+  & img {
+    height: 100%;
+    width: auto;
+  }
+}
+

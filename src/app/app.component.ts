@@ -31,9 +31,10 @@ export class AppComponent {
     {section: 'artworks', name: 'art projects'},
     {section: 'programming', name: 'programming projects'},
     {section: 'contact', name: 'contact me!'},
-  ] 
+  ]
 
   ngOnInit() {
+    window.scrollTo(0, 0);
     this.navbar = document.getElementById('nav');
   }
 
@@ -43,7 +44,7 @@ export class AppComponent {
     const scrollTop = window.scrollY;
     const navBarStyle = this.navbar!.style!;
 
-    if (!this.navbarHeight) 
+    if (!this.navbarHeight)
       this.navbarHeight = this.navbar!.getBoundingClientRect().height;
 
     if (this.navbar) {

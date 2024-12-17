@@ -33,8 +33,15 @@ import {
 })
 export class ProjectListComponent {
   projects: Project[] = PROJECTS;
+  showImage: boolean = false;
+  currentImage: string = "";
+  mouseX: number = 0;
+  mouseY: number = 0;
+  imageLoaded: boolean = false;
 
   showingProject: Project | null = null;
+  hoveringProject: Project | null = null;
+
   buttonList : {type: string, link: string}[] | null = [];
 
   selectProject(project: Project) {
@@ -43,4 +50,29 @@ export class ProjectListComponent {
     }
   }
 
+  recordMousePos(project: Project, event: MouseEvent) {
+    if (project.imgSrc == '') {
+      this.showImage = false;
+      return;
+    }
+
+    if (project != this.hoveringProject && this.currentImage != project.imgSrc) {
+      this.imageLoaded = false;
+    }
+
+    this.hoveringProject = project;
+    this.currentImage = project.imgSrc;
+    this.showImage = true;
+
+    const img = document.querySelector('#hovering-image') as HTMLElement;
+    if (img == null) return;
+
+    this.mouseX = event.clientX - (img.clientHeight * img.clientWidth / 300) / 2;
+    this.mouseY = event.clientY - 150;
+  }
+
+  onImageLoad() {
+    this.imageLoaded = true;
+    console.log("onImageLoad");
+  }
 }
