@@ -32,6 +32,9 @@ import {
   // ]
 })
 export class ProjectListComponent {
+  maxWidth: number = 700;
+  maxHeight: number = 500;
+
   projects: Project[] = PROJECTS;
   showImage: boolean = false;
   currentImage: string = "";
@@ -67,8 +70,18 @@ export class ProjectListComponent {
     const img = document.querySelector('#hovering-image') as HTMLElement;
     if (img == null) return;
 
-    this.mouseX = event.clientX - (img.clientHeight * img.clientWidth / 300) / 2;
-    this.mouseY = event.clientY - 150;
+    if (img.clientHeight > img.clientWidth)
+    {
+      img.style.height = this.maxHeight + 'px';
+      img.style.width = 'auto';
+    }
+    else {
+      img.style.width = this.maxWidth + 'px';
+      img.style.height = 'auto';
+    }
+
+    this.mouseX = event.clientX - img.clientWidth / 2;
+    this.mouseY = event.clientY - img.clientHeight / 2;
   }
 
   onImageLoad() {

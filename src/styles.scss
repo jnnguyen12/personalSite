@@ -114,12 +114,16 @@
         }
     }
 
-    &:not(.selected):hover {
+    &:not(.selected):not(.spinning-cursor):hover {
         cursor: pointer;
 
         &::before {
             border-color: $chopstick
         }
+    }
+
+    &.spinning-cursor:hover {
+      cursor: wait;
     }
 
     .content {

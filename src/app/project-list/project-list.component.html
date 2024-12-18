@@ -9,7 +9,7 @@
       </div>
       <h5 class="fade-up fw-normal mx-3" appScrollAnimation animationDelay="0.1s" animationStartHeight="0.9"
           animationClass="fade-in">
-        Here are a few notable projects I have worked on, for educational purposes and entertainment purposes. Click on
+        Here are a few notable projects I have worked on, for educational purposes and entertainment purposes. Hover (desktop only for now) on each section for an image snippet, click on
         the projects so see more!
       </h5>
       <div class="fade-up" appScrollAnimation animationDelay="0.3s" animationStartHeight="0.9" animationClass="fade-in">
@@ -20,7 +20,8 @@
     <div class="col-lg-8 col-xl-7 h-100">
       <div class="tree-wrapper h-100">
         <div *ngFor="let project of projects; index as i"
-             [ngClass]="showingProject == project ? 'tree-item fade-up selected' : 'tree-item fade-up'"
+             [ngClass]="(showingProject == project ? 'tree-item fade-up selected' : 'tree-item fade-up') +
+                        (imageLoaded ? '' : 'spinning-cursor')"
              appScrollAnimation [animationDelay]="0.5 + i * 0.1 + 's'" animationStartHeight="1" animationClass="fade-in"
              (click)="selectProject(project)"
              (mousemove)="recordMousePos(project, $event)"

@@ -75,7 +75,7 @@ export const PROJECTS: Project[] = [
     platforms: ['Web'],
   },
   {
-    imgSrc: imgPath + 'inflight.png',
+    imgSrc: imgPath + 'map.png',
     name: 'Inflight Entertainment Map',
     date: 'Fall 2023',
     medium: 'React JS, Bootstrap',
