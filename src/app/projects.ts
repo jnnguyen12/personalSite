@@ -1,6 +1,6 @@
 import {Project} from './interfaces/interfaces';
 
-const imgPath = '../assets/img/';
+const imgPath = 'assets/img/';
 
 export const PROJECTS: Project[] = [
   {
