@@ -20,13 +20,12 @@
     <div class="col-lg-8 col-xl-7 h-100">
       <div class="tree-wrapper h-100">
         <div *ngFor="let project of projects; index as i"
-             [ngClass]="(showingProject == project ? 'tree-item fade-up selected' : 'tree-item fade-up') +
-                        (imageLoaded ? '' : 'spinning-cursor')"
-             appScrollAnimation [animationDelay]="0.5 + i * 0.1 + 's'" animationStartHeight="1" animationClass="fade-in"
-             (click)="selectProject(project)"
-             (mousemove)="recordMousePos(project, $event)"
-             (mouseleave)="showImage = false">
-          <div class="content">
+             appScrollAnimation [animationDelay]="0.3 + i * 0.05 + 's'" animationStartHeight="1" animationClass="fade-in"
+             [ngClass]="(showingProject == project ? 'tree-item fade-up selected' : 'tree-item fade-up')"
+             (click)="selectProject(project)">
+          <div class="content"
+               (mousemove)="recordMousePos(project, $event)"
+               (mouseleave)="showImage = false">
             <div class="background"></div>
             <div class="d-flex justify-content-between row">
               <div class="col-md-auto col-12">

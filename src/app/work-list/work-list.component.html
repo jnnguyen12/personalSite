@@ -8,16 +8,16 @@
               <div class="mb-4 opacity-75">*/</div>
             </div>
             <h5 class="fw-normal mx-3">
-              My past positions, along with the skillsets I gained during these amazing opportunities. <br> <br> 
+              My past positions, along with the skillsets I gained during these amazing opportunities. <br> <br>
               Tap on each timestamp to learn more!
             </h5>
           </div>
           <!-- right column -->
           <div class="col-lg-8 col-xl-7 h-100">
             <div class="tree-wrapper h-100">
-              <div *ngFor="let experience of experiences; index as i" 
-              [ngClass]="showingExperience == experience ? 'tree-item fade-up selected' : 'tree-item fade-up'" 
-                 appScrollAnimation [animationDelay]="0.5 + i * 0.1 + 's'" animationStartHeight="1" animationClass="fade-in"
+              <div *ngFor="let experience of experiences; index as i"
+              [ngClass]="showingExperience == experience ? 'tree-item fade-up selected' : 'tree-item fade-up'"
+                 appScrollAnimation [animationDelay]="0.3 + i * 0.05 + 's'" animationStartHeight="1" animationClass="fade-in"
               (click)="selectExperience(experience)">
                 <div class="content">
                     <div class="background"></div>
@@ -31,7 +31,7 @@
                     <div *ngFor="let skill of experience.skills" class="skill-pill">
                       {{ skill }}
                     </div>
-                    
+
                     <div [ngClass]="showingExperience == experience ? 'desc show' : 'desc'">
                       <div *ngFor="let desc of descriptions">
                         <p>{{ desc }}</p>
